@@ -1,0 +1,37 @@
+// Kirsty Alexandra Nguegang
+
+Creating aSet with the secondary constructor - capacity of 8
+Adding elements from inputData to aSet
+The set contains 4 string(s): A B C D 
+
+Clearing aSet
+The set is empty
+aSet isEmpty returns true
+The size of aSet is 0
+
+Creating set1 with default constructor
+
+set1 initially empty, capacity of 3: 
+The set is empty
+
+Adding elements to set1
+
+set1 after adding elements: 
+The set contains 3 string(s): A B C 
+
+set1 after adding more elements which should trigger resizing: 
+--> Resizing this.arrayOfSetEntries from 3 to 6
+--> Resizing this.arrayOfSetEntries from 6 to 12
+The set contains 10 string(s): A B C V T U W X Y Z 
+
+Creating set2 with the secondary constructor that takes an array as input
+Adding more elements to set2
+set2 after adding and resizing: 
+The set contains 8 string(s): A B C D E F G H 
+
+set1 contains A: true
+set1 contains E: false
+After removing B from set1:
+The set contains 9 string(s): A Z C V T U W X Y 
+After removing Y from set1:
+The set contains 8 string(s): A Z C V T U W X 
