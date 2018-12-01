@@ -1,0 +1,628 @@
+// Kirsty Alexandra Nguegang
+// COMP 151
+// Lab 11: Dictionary
+
+                                                                                            Lab 11 Output
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                            SetDictionary Output
+
+CREATING set1
+--> set1 has 5 items:
+[-1, 0, 1, 2, 3]
+
+--> contains for -1 yields true
+--> contains for -2 yields false
+--> contains for 3 yields true
+--> contains for 4 yields false
+
+--> Added 1 again to the set1, should be the same
+--> set1 has 5 items:
+[-1, 0, 1, 2, 3]
+
+--> Iterating over set1 utilizing getIterator method
+	-1
+	0
+	1
+	2
+	3
+--> Iterating over set1 utilizing iterator method
+	-1
+	0
+	1
+	2
+	3
+--> Iterating over set1 utilizing forEach lambda
+	 -1
+	 0
+	 1
+	 2
+	 3
+
+--> Removing -1 20 3 from set1:
+---> -1 was removed - CORRECT
+---> 20 was not removed - CORRECT
+---> 3 was removed - CORRECT
+--> Should just have 0 1 and 2 now
+--> set1 has 3 items:
+[0, 1, 2]
+
+CREATING set2
+--> set2 has 6 items:
+[-1, 1, 2, 3, 5, 8]
+
+set1 and set2 are NOT the same - CORRECT
+
+CREATING UNION OF set1 and set2
+--> The union of set1 and set2 has 7 items: [-1, 0, 1, 2, 3, 5, 8]
+
+--> set1 should be unchanged
+--> set1 has 3 items:
+[0, 1, 2]
+
+--> set2 should be unchanged
+--> set2 has 6 items:
+[-1, 1, 2, 3, 5, 8]
+
+CREATING UNION OF set1 and set1
+--> The union of set1 and set1 has 3 items: [0, 1, 2]
+
+set1 and testUnion are the same - CORRECT
+
+CREATING INTERSECTION OF set1 and set2
+Finished creating intersection.
+--> The intersection of set1 and set2 has 2 items: [1, 2]
+
+--> set1 should be unchanged
+--> set1 has 3 items:
+[0, 1, 2]
+
+--> set2 should be unchanged
+--> set2 has 6 items:
+[-1, 1, 2, 3, 5, 8]
+
+CREATING INTERSECTION OF set2 and set1
+Finished creating intersection.
+--> The intersection of set2 and set1 has 2 items: [1, 2]
+
+--> set1 should be unchanged
+--> set1 has 3 items:
+[0, 1, 2]
+
+--> set2 should be unchanged
+--> set2 has 6 items:
+[-1, 1, 2, 3, 5, 8]
+
+CREATING INTERSECTION OF set2 and set2
+Finished creating intersection.
+--> The intersection of set2 and set2 has 6 items: [-1, 1, 2, 3, 5, 8]
+
+--> set1 should be unchanged
+--> set1 has 3 items:
+[0, 1, 2]
+
+--> set2 should be unchanged
+--> set2 has 6 items:
+[-1, 1, 2, 3, 5, 8]
+
+set2 and testIntersection are the same - CORRECT
+
+CREATING INTERSECTION OF testUnion and set2
+Finished creating intersection.
+--> The intersection of testUnion and set2 has 2 items: [1, 2]
+
+--> testUnion should be unchanged
+--> testUnion has 3 items:
+[0, 1, 2]
+
+--> set2 should be unchanged
+--> set2 has 6 items:
+[-1, 1, 2, 3, 5, 8]
+
+set2 and testIntersection are NOT the same - CORRECT
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                            Bingo Output
+
+---> Setting up bingo game.
+Enter number of players.
+4
+---> Creating bingo card for Player 1
+B	1 2 5 8 9
+I	19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	62 65 67 69 72
+
+---> Creating bingo card for Player 2
+B	1 2 3 7 14
+I	16 21 24 27 28
+N	31 33 42 43 44
+G	51 54 55 57 59
+O	62 67 68 71 73
+
+---> Creating bingo card for Player 3
+B	4 7 8 12 14
+I	17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+---> Creating bingo card for Player 4
+B	5 7 8 11 12
+I	16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+---> Starting the game with 4 players:
+     *********************************
+
+ ---> Calling: N 34
+Player 1's card:
+B	1 2 5 8 9
+I	19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	16 21 24 27 28
+N	31 33 42 43 44
+G	51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: I 16
+Player 1's card:
+B	1 2 5 8 9
+I	19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: N 47
+Player 1's card:
+B	1 2 5 8 9
+I	19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: G 55
+Player 1's card:
+B	1 2 5 8 9
+I	19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: O 70
+Player 1's card:
+B	1 2 5 8 9
+I	19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: I 28
+Player 1's card:
+B	1 2 5 8 9
+I	0 19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	0 17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: G 51
+Player 1's card:
+B	1 2 5 8 9
+I	0 19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	0 17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: O 72
+Player 1's card:
+B	1 2 5 8 9
+I	0 19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	0 17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: G 60
+Player 1's card:
+B	1 2 5 8 9
+I	0 19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	4 7 8 12 14
+I	0 17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: B 8
+Player 1's card:
+B	0 1 2 5 8 9
+I	0 19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	0 4 7 8 12 14
+I	0 17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	0 5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: I 23
+Player 1's card:
+B	0 1 2 5 8 9
+I	0 19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	0 4 7 8 12 14
+I	0 17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	0 5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: I 30
+Player 1's card:
+B	0 1 2 5 8 9
+I	0 19 22 26 28 29
+N	35 36 39 43 44
+G	47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	0 4 7 8 12 14
+I	0 17 19 26 27 28
+N	31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	0 5 7 8 11 12
+I	0 16 21 24 26 28
+N	32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: N 35
+Player 1's card:
+B	0 1 2 5 8 9
+I	0 19 22 26 28 29
+N	0 35 36 39 43 44
+G	47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	0 4 7 8 12 14
+I	0 17 19 26 27 28
+N	0 31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	0 5 7 8 11 12
+I	0 16 21 24 26 28
+N	0 32 35 36 40 41
+G	48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: G 50
+Player 1's card:
+B	0 1 2 5 8 9
+I	0 19 22 26 28 29
+N	0 35 36 39 43 44
+G	47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	0 4 7 8 12 14
+I	0 17 19 26 27 28
+N	0 31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	0 5 7 8 11 12
+I	0 16 21 24 26 28
+N	0 32 35 36 40 41
+G	0 48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: I 27
+Player 1's card:
+B	0 1 2 5 8 9
+I	0 19 22 26 28 29
+N	0 35 36 39 43 44
+G	47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	0 4 7 8 12 14
+I	0 17 19 26 27 28
+N	0 31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	0 5 7 8 11 12
+I	0 16 21 24 26 28
+N	0 32 35 36 40 41
+G	0 48 50 53 54 56
+O	63 68 71 73 74
+
+ ---> Calling: G 58
+Player 1's card:
+B	0 1 2 5 8 9
+I	0 19 22 26 28 29
+N	0 35 36 39 43 44
+G	0 47 48 52 58 59
+O	0 62 65 67 69 72
+
+Player 2's card:
+B	1 2 3 7 14
+I	0 16 21 24 27 28
+N	31 33 42 43 44
+G	0 51 54 55 57 59
+O	62 67 68 71 73
+
+Player 3's card:
+B	0 4 7 8 12 14
+I	0 17 19 26 27 28
+N	0 31 33 35 36 42
+G	46 47 48 54 57
+O	61 63 64 67 69
+
+Player 4's card:
+B	0 5 7 8 11 12
+I	0 16 21 24 26 28
+N	0 32 35 36 40 41
+G	0 48 50 53 54 56
+O	63 68 71 73 74
+
+!!! Player 1 says BINGO !!!
+16 chips were called.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
