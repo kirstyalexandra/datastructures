@@ -1,0 +1,607 @@
+// Kirsty Alexandra Nguegang
+// COMP 151
+// Lab 13: Trees
+                                                                               Lab 13 Output
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                               Morse Code
+
+The Morse Code:
+===============
+e .
+t _
+i ..
+a ._
+n _.
+m __
+s ...
+u .._
+r ._.
+w .__
+d _..
+k _._
+g __.
+o ___
+h ....
+v ..._
+f .._.
+l ._..
+p .__.
+j .___
+b _...
+x _.._
+c _._.
+y _.__
+z __..
+q __._
+
+The Morse Code Tree in level order:
+  e t i a n m s u r w d k g o h v f l p j b x c y z q
+
+
+
+The Morse Code Tree in pre-order:
+  e i s h v u f a r l w p j t n d b x k c y m g z q o
+
+
+
+Please enter a message in Morse Code, use space as a separator. Press enter to stop.
+... ___ ...
+Decoding "... ___ ..."
+The decoded string is "sos"
+Please enter a message in Morse Code, use space as a separator. Press enter to stop.
+_._. ... .._ _._. ..
+Decoding "_._. ... .._ _._. .."
+The decoded string is "csuci"
+Please enter a message in Morse Code, use space as a separator. Press enter to stop.
+._.
+Decoding "._."
+The decoded string is "r"
+Please enter a message in Morse Code, use space as a separator. Press enter to stop.
+._._
+Decoding "._._"
+Not a Morse Code pattern.
+The decoded string is ""
+Please enter a message in Morse Code, use space as a separator. Press enter to stop.
+
+Done decoding.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                           Postfix Tree
+
+The first postfix expression is:
+ab*c+
+
+The inorder traversal is:
+a * b + c
+
+The postorder traversal is:
+a b * c +
+
+The second postfix expression is:
+ab-c*def-+g/+
+
+The inorder traversal is:
+a - b * c + d + e - f / g
+
+The postorder traversal is:
+a b - c * d e f - + g / +
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        WorkingWithBinaryTrees
+
+
+Tree 1:
+
+     A
+   /   \
+  B     C
+ / \   / \
+D   E  F  G
+
+Traversing the tree "inOrder" to check if it's BST:
+D B
+tree1 is BST = false -> CORRECT
+
+Tree 1a:
+
+     D
+   /   \
+  B     F
+ / \   / \
+A   C  E  G
+
+Traversing the tree "inOrder" to check if it's BST:
+A B C D E F G
+tree1a is BST = true -> CORRECT
+The smallest element = A
+The second largest element = F
+
+Tree 2:
+
+     A
+   /   \
+  B     C
+   \   / \
+    E  F  G
+
+Traversing the tree "inOrder" to check if it's BST:
+B E A
+tree2 is BST = false -> CORRECT
+
+Tree 2a:
+
+     C
+   /   \
+  A     F
+   \   / \
+    B  E  G
+
+Traversing the tree "inOrder" to check if it's BST:
+A B C E F G
+tree2a is BST = true -> CORRECT
+The smallest element = A
+The second largest element = F
+
+Tree 3:
+
+     A
+   /   \
+  B     C
+ / \   /
+D   E  F
+        \
+         G
+
+Traversing the tree "inOrder" to check if it's BST:
+D B
+tree3 is BST = false -> CORRECT
+
+Tree 3a:
+
+     D
+   /   \
+  B     G
+ / \   /
+A   C  E
+        \
+         F
+
+Traversing the tree "inOrder" to check if it's BST:
+A B C D E F G
+tree3a is BST = true -> CORRECT
+The smallest element = A
+The second largest element = F
+
+Tree 4:
+
+     A
+   /   \
+  B     C
+ / \   / \
+D   E  F  G
+ \
+  H
+
+Traversing the tree "inOrder" to check if it's BST:
+D H B
+tree4 is BST = false -> CORRECT
+
+Tree 4a:
+
+     E
+   /   \
+  C     G
+ / \   / \
+A   D  F  H
+ \
+  B
+
+Traversing the tree "inOrder" to check if it's BST:
+A B C D E F G H
+tree4a is BST = true -> CORRECT
+The smallest element = A
+The second largest element = G
+
+Tree 5:
+
+     A
+   /   \
+  B     C
+ / \   / \
+D   E  F  G
+     \
+      H
+
+Traversing the tree "inOrder" to check if it's BST:
+D B
+tree5 is BST = false -> CORRECT
+
+Tree 5a:
+
+     E
+   /   \
+  B     G
+ / \   / \
+A   C  F  H
+     \
+      D
+
+Traversing the tree "inOrder" to check if it's BST:
+A B C D E F G H
+tree5a is BST = true -> CORRECT
+The smallest element = A
+The second largest element = G
+
+Tree 6:
+
+     A
+   /   \
+  B     C
+ / \     \
+D   E     H
+   / \
+  F   G
+
+Traversing the tree "inOrder" to check if it's BST:
+D B
+tree6 is BST = false -> CORRECT
+
+Tree 6a:
+
+     F
+   /   \
+  B     G
+ / \     \
+A   D     H
+   / \
+  C   E
+
+Traversing the tree "inOrder" to check if it's BST:
+A B C D E F G H
+tree6a is BST = true -> CORRECT
+The smallest element = A
+The second largest element = G
+
+Tree 7:
+
+      G
+       \
+        B
+         \
+          E
+           \
+            A
+
+Traversing the tree "inOrder" to check if it's BST:
+G
+tree7 is BST = false -> CORRECT
+
+Tree 7a:
+
+      A
+       \
+        B
+         \
+          E
+           \
+            G
+
+Traversing the tree "inOrder" to check if it's BST:
+A B E G
+tree7a is BST = true -> CORRECT
+The smallest element = A
+The second largest element = E
+
+Tree 8a:
+
+     D
+   /   \
+  B     F
+
+Traversing the tree "inOrder" to check if it's BST:
+B D F
+tree8a is BST = true -> CORRECT
+The smallest element = B
+The second largest element = D
+
+Tree 9a:
+
+     D
+   /
+  B
+
+Traversing the tree "inOrder" to check if it's BST:
+B D
+tree9a is BST = true -> CORRECT
+The smallest element = B
+The second largest element = B
+
+Tree 10a:
+
+     D
+   /
+  B
+
+Traversing the tree "inOrder" to check if it's BST:
+B D
+tree10a is BST = true -> CORRECT
+The smallest element = B
+The second largest element = B
+
+Tree 11a:
+
+     D
+
+Traversing the tree "inOrder" to check if it's BST:
+D
+tree11a is BST = true -> CORRECT
+The smallest element = D
+The second largest element = null
+
+Working with tree built from the array: [A, B, C, D, E, F, G, H, I, J, K]
+Traversing the tree "inOrder" to check if it's BST:
+A B C D E F G H I J K
+The tree is BST = true
+The tree has 11 nodes and the height of 4
+The tree in level order:
+F <-- level 1
+C I <-- level 2
+A D G J <-- level 3
+B E H K <-- level 4
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        WorkingWithHeaps
+
+How many lists to create?
+20
+Maximum number of elements for the lists?
+7
+
+Created lists:
+8
+8 14 21
+5 9 14 20
+6 9 13 18 24 31
+8 15
+3 8
+<empty>
+2 6 11
+5 10
+6 8 11 15
+5
+6 8 13
+6 11
+2 4 9
+3
+5 8 12
+3 6 10
+4 9
+6
+2 5 9
+
+Merged List:
+2 3 3 3 4 4 5 5 5 6 8 8 8 8 9 9 9 9 9 10 10 11 11 11 12 13 13 14 14 15 15 18 20 21 24 31
+
+*** Done ***
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        EncodeApplication
+
+*********** SAMPLE RUN OF "JILL DILL" MESSAGE ************
+
+The message lines are:
+Jill Dill
+
+---> Count of character   is 1
+---> Count of character D is 1
+---> Count of character J is 1
+---> Count of character i is 2
+---> Count of character l is 4
+Creating 5 initial trees
+Building Huffman Tree
+--->Smallest tree moved to the position 4
+--->Second smallest tree moved to the position 3
+--->Combined tree created: [ , D] -> 2
+--->Combined tree added at position 3
+--->Smallest tree moved to the position 3
+--->Second smallest tree moved to the position 2
+--->Combined tree created: [J, i] -> 3
+--->Combined tree added at position 2
+--->Smallest tree moved to the position 2
+--->Second smallest tree moved to the position 1
+--->Combined tree created: [ , D, J, i] -> 5
+--->Combined tree added at position 1
+--->Smallest tree moved to the position 1
+--->Second smallest tree moved to the position 0
+--->Combined tree created: [l,  , D, J, i] -> 9
+--->Combined tree added at position 0
+
+Huffman Tree:
+[l,  , D, J, i] -> 9
+[l] -> 4
+[ , D, J, i] -> 5
+[ , D] -> 2
+[ ] -> 1
+[D] -> 1
+[J, i] -> 3
+[J] -> 1
+[i] -> 2
+
+The coded lines are (displaying 80 characters per line):
+1101110010010111100
+
+
+********** SAMPLE RUN OF "ABRACADABRAABBA" MESSAGE ***********
+
+The message lines are:
+ABRACADABRA
+ABBA
+
+---> Count of character A is 7
+---> Count of character B is 4
+---> Count of character C is 1
+---> Count of character D is 1
+---> Count of character R is 2
+Creating 5 initial trees
+Building Huffman Tree
+--->Smallest tree moved to the position 4
+--->Second smallest tree moved to the position 3
+--->Combined tree created: [C, D] -> 2
+--->Combined tree added at position 3
+--->Smallest tree moved to the position 3
+--->Second smallest tree moved to the position 2
+--->Combined tree created: [R, C, D] -> 4
+--->Combined tree added at position 2
+--->Smallest tree moved to the position 2
+--->Second smallest tree moved to the position 1
+--->Combined tree created: [B, R, C, D] -> 8
+--->Combined tree added at position 1
+--->Smallest tree moved to the position 1
+--->Second smallest tree moved to the position 0
+--->Combined tree created: [A, B, R, C, D] -> 15
+--->Combined tree added at position 0
+
+Huffman Tree:
+[A, B, R, C, D] -> 15
+[A] -> 7
+[B, R, C, D] -> 8
+[B] -> 4
+[R, C, D] -> 4
+[R] -> 2
+[C, D] -> 2
+[C] -> 1
+[D] -> 1
+
+The coded lines are (displaying 80 characters per line):
+01011001110011110101100010100
+
+********** SAMPLE RUN OF "MYNAME.txt" MESSAGE *********
+
+The message lines are:
+Kirsty Alexandra Nguegang
+
+---> Count of character   is 2
+---> Count of character A is 1
+---> Count of character K is 1
+---> Count of character N is 1
+---> Count of character a is 3
+---> Count of character d is 1
+---> Count of character e is 2
+---> Count of character g is 3
+---> Count of character i is 1
+---> Count of character l is 1
+---> Count of character n is 2
+---> Count of character r is 2
+---> Count of character s is 1
+---> Count of character t is 1
+---> Count of character u is 1
+---> Count of character x is 1
+---> Count of character y is 1
+Creating 17 initial trees
+Building Huffman Tree
+--->Smallest tree moved to the position 16
+--->Second smallest tree moved to the position 15
+--->Combined tree created: [A, y] -> 2
+--->Combined tree added at position 15
+--->Smallest tree moved to the position 15
+--->Second smallest tree moved to the position 14
+--->Combined tree created: [x, K] -> 2
+--->Combined tree added at position 14
+--->Smallest tree moved to the position 14
+--->Second smallest tree moved to the position 13
+--->Combined tree created: [u, N] -> 2
+--->Combined tree added at position 13
+--->Smallest tree moved to the position 13
+--->Second smallest tree moved to the position 12
+--->Combined tree created: [t, d] -> 2
+--->Combined tree added at position 12
+--->Smallest tree moved to the position 12
+--->Second smallest tree moved to the position 11
+--->Combined tree created: [s, i] -> 2
+--->Combined tree added at position 11
+--->Smallest tree moved to the position 11
+--->Second smallest tree moved to the position 10
+--->Combined tree created: [l,  ] -> 3
+--->Combined tree added at position 10
+--->Smallest tree moved to the position 10
+--->Second smallest tree moved to the position 9
+--->Combined tree created: [n, A, y] -> 4
+--->Combined tree added at position 9
+--->Smallest tree moved to the position 9
+--->Second smallest tree moved to the position 8
+--->Combined tree created: [s, i, x, K] -> 4
+--->Combined tree added at position 8
+--->Smallest tree moved to the position 8
+--->Second smallest tree moved to the position 7
+--->Combined tree created: [r, u, N] -> 4
+--->Combined tree added at position 7
+--->Smallest tree moved to the position 7
+--->Second smallest tree moved to the position 6
+--->Combined tree created: [t, d, e] -> 4
+--->Combined tree added at position 6
+--->Smallest tree moved to the position 6
+--->Second smallest tree moved to the position 5
+--->Combined tree created: [l,  , g] -> 6
+--->Combined tree added at position 5
+--->Smallest tree moved to the position 5
+--->Second smallest tree moved to the position 4
+--->Combined tree created: [a, t, d, e] -> 7
+--->Combined tree added at position 4
+--->Smallest tree moved to the position 4
+--->Second smallest tree moved to the position 3
+--->Combined tree created: [n, A, y, s, i, x, K] -> 8
+--->Combined tree added at position 3
+--->Smallest tree moved to the position 3
+--->Second smallest tree moved to the position 2
+--->Combined tree created: [r, u, N, l,  , g] -> 10
+--->Combined tree added at position 2
+--->Smallest tree moved to the position 2
+--->Second smallest tree moved to the position 1
+--->Combined tree created: [a, t, d, e, n, A, y, s, i, x, K] -> 15
+--->Combined tree added at position 1
+--->Smallest tree moved to the position 1
+--->Second smallest tree moved to the position 0
+--->Combined tree created: [r, u, N, l,  , g, a, t, d, e, n, A, y, s, i, x, K] -> 25
+--->Combined tree added at position 0
+
+Huffman Tree:
+[r, u, N, l,  , g, a, t, d, e, n, A, y, s, i, x, K] -> 25
+[r, u, N, l,  , g] -> 10
+[r, u, N] -> 4
+[r] -> 2
+[u, N] -> 2
+[u] -> 1
+[N] -> 1
+[l,  , g] -> 6
+[l,  ] -> 3
+[l] -> 1
+[ ] -> 2
+[g] -> 3
+[a, t, d, e, n, A, y, s, i, x, K] -> 15
+[a, t, d, e] -> 7
+[a] -> 3
+[t, d, e] -> 4
+[t, d] -> 2
+[t] -> 1
+[d] -> 1
+[e] -> 2
+[n, A, y, s, i, x, K] -> 8
+[n, A, y] -> 4
+[n] -> 2
+[A, y] -> 2
+[A] -> 1
+[y] -> 1
+[s, i, x, K] -> 4
+[s, i] -> 2
+[s] -> 1
+[i] -> 1
+[x, K] -> 2
+[x] -> 1
+[K] -> 1
+
+The coded lines are (displaying 80 characters per line):
+11111111010001110010100110110101110100100101111110100110010101000100010100110110
+01010110111001100011
+
