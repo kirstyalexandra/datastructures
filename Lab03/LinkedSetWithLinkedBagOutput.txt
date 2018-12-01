@@ -1,0 +1,31 @@
+// Kirsty Alexandra Nguegang
+
+Creating aSet and adding to it elements from inputData: [A, B, C, D, A, C, B, B]
+The set contains 4 string(s), as follows: 
+D C B A 
+
+Clearing aSet
+The set is empty.
+aSet isEmpty returns true
+
+Creating set1 and set2
+
+Adding elements to set1
+set1 is 
+The set contains 3 string(s), as follows: 
+C B A 
+
+Adding elements to set2
+set2 is 
+The set contains 4 string(s), as follows: 
+D C B A 
+
+set1 contains A: true
+set1 contains E: false
+After removing B from set1, 
+The set contains 2 string(s), as follows: 
+C A 
+
+After removing C from set1, 
+The set contains 1 string(s), as follows: 
+A 
