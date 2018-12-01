@@ -1,0 +1,20 @@
+//Kirsty Alexandra Nguegang
+
+*** This program determines whether a string is a palindrome. 
+A palindrome is spelled the same from left to right as it is from right to left,
+if we ignore punctuation, spaces, and case. ***
+
+Enter a string that you want to check (or enter "stop" to stop): 
+Race car
+--> Checking: racecar
+"Race car" is a palindrome!
+
+Enter a string that you want to check (or enter "stop" to stop): 
+A man, a plan, a canal: Panama!
+--> Checking: amanaplanacanalpanama
+"A man, a plan, a canal: Panama!" is a palindrome!
+
+Enter a string that you want to check (or enter "stop" to stop): 
+abracadabra
+--> Checking: abracadabra
+"abracadabra" is not a palindrome!
