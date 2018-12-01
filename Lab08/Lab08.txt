@@ -1,0 +1,1385 @@
+//Kirsty Alexandra Nguegang
+// COMP 151
+// L08 Output
+
+																DROPOUT STACK OUTPUT
+**************  TESTING DROPOUT STACK  **************
+
+---->  Adding 20 items to empty stack of capacity of 20
+---->  The content of the stack is:
+[19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+----> The top of the stack is: 19
+
+----> Adding 5 more items to full stack
+push 20
+push 21
+push 22
+push 23
+push 24
+---->  The content of the stack is:
+[24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5]
+----> The top of the stack is: 24
+
+---->  Removing all elements from the stack:
+----> pop 24
+----> pop 23
+----> pop 22
+----> pop 21
+----> pop 20
+----> pop 19
+----> pop 18
+----> pop 17
+----> pop 16
+----> pop 15
+----> pop 14
+----> pop 13
+----> pop 12
+----> pop 11
+----> pop 10
+----> pop 9
+----> pop 8
+----> pop 7
+----> pop 6
+----> pop 5
+The stack is empty
+----> The top of the stack is: null
+
+----> Trying to pop from the empty stack
+----> Got back null
+
+----> Trying to peek at the top of the empty stack
+----> Got back null
+
+----> Adding 22 items to empty stack of capacity of 20
+---->  The content of the stack is:
+[21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+
+---->  Clearing the stack with the clear method
+---->  The content of the stack is:
+The stack is empty
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+																
+																CIPHER OUTPUT
+--->The original message encoded is:
+Fxi(gvyiufnrqo{e|g#umftz`krvv%bspicp*errqzbzj$kth%mtpemvrwt3
+--->The original message decoded is:
+All programmers are playwrights and all computers are lousy actors.
+
+--->The original message encoded is:
+Ytbz\$su#sp%qimme~qu%ut,p}Zgouv1!^{r(_eg#yp%^s\$~jh%tymfzj280
+--->The original message decoded is:
+There is no elevator to success, You have to take the stairs...
+
+--->The original message encoded is:
+Ws|wv%ev{$Xjujm}
+--->The original message decoded is:
+Trust but Verify
+
+--->The original message encoded is:
+ubji"hds
+--->The original message decoded is:
+race car
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+																
+																TRAIN SIMULATION OUTPUT
+
+**************  TRAIN SIMULATION  **************
+
+--> Creating 10 stations: 
+Station 0 has no passengers waiting; the time to next station is 5
+Station 1 has no passengers waiting; the time to next station is 5
+Station 2 has no passengers waiting; the time to next station is 8
+Station 3 has no passengers waiting; the time to next station is 9
+Station 4 has no passengers waiting; the time to next station is 5
+Station 5 has no passengers waiting; the time to next station is 5
+Station 6 has no passengers waiting; the time to next station is 9
+Station 7 has no passengers waiting; the time to next station is 8
+Station 8 has no passengers waiting; the time to next station is 7
+Station 9 has no passengers waiting; the time to next station is 6
+
+--> Starting the clock; duration set to 50
+
+Passenger arrived at time marker 0 at station 2 heading to 9
+Passenger arrived at time marker 0 at station 6 heading to 8
+Passenger arrived at time marker 0 at station 7 heading to 8
+Passenger arrived at time marker 0 at station 6 heading to 8
+New train: Train 1 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 0; unloaded 0; loaded 0 passengers; Space left 20
+Train 1 capacity of 20 arriving at station 1 in 5 minutes; currently 0 passengers on board
+-----At time marker 0 -> passengers waiting: 4	 on trains: 0	 active trains: 1-----
+
+Passenger arrived at time marker 1 at station 3 heading to 4
+Passenger arrived at time marker 1 at station 0 heading to 8
+Passenger arrived at time marker 1 at station 3 heading to 5
+Passenger arrived at time marker 1 at station 3 heading to 4
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 1 in 4 minutes; currently 0 passengers on board
+-----At time marker 1 -> passengers waiting: 8	 on trains: 0	 active trains: 1-----
+
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 1 in 3 minutes; currently 0 passengers on board
+-----At time marker 2 -> passengers waiting: 8	 on trains: 0	 active trains: 1-----
+
+Passenger arrived at time marker 3 at station 1 heading to 8
+Passenger arrived at time marker 3 at station 0 heading to 6
+Passenger arrived at time marker 3 at station 2 heading to 6
+Passenger arrived at time marker 3 at station 1 heading to 7
+Passenger arrived at time marker 3 at station 0 heading to 5
+Passenger arrived at time marker 3 at station 6 heading to 7
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 1 in 2 minutes; currently 0 passengers on board
+-----At time marker 3 -> passengers waiting: 14	 on trains: 0	 active trains: 1-----
+
+Passenger arrived at time marker 4 at station 3 heading to 5
+Passenger arrived at time marker 4 at station 7 heading to 8
+Passenger arrived at time marker 4 at station 0 heading to 3
+Passenger arrived at time marker 4 at station 4 heading to 9
+Passenger arrived at time marker 4 at station 2 heading to 9
+Passenger arrived at time marker 4 at station 0 heading to 3
+Passenger arrived at time marker 4 at station 0 heading to 1
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 1 in 1 minutes; currently 0 passengers on board
+-----At time marker 4 -> passengers waiting: 21	 on trains: 0	 active trains: 1-----
+
+Passenger arrived at time marker 5 at station 4 heading to 7
+Passenger arrived at time marker 5 at station 4 heading to 5
+Passenger arrived at time marker 5 at station 1 heading to 2
+Passenger arrived at time marker 5 at station 3 heading to 8
+Passenger arrived at time marker 5 at station 3 heading to 5
+Passenger arrived at time marker 5 at station 2 heading to 7
+Passenger arrived at time marker 5 at station 1 heading to 4
+New train: Train 2 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 1; unloaded 0; loaded 4 passengers; Space left 16
+Train 1 capacity of 20 arriving at station 2 in 5 minutes; currently 4 passengers on board
+	Train 2 is at station 0; unloaded 0; loaded 6 passengers; Space left 14
+Train 2 capacity of 20 arriving at station 1 in 5 minutes; currently 6 passengers on board
+-----At time marker 5 -> passengers waiting: 18	 on trains: 10	 active trains: 2-----
+
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 2 in 4 minutes; currently 4 passengers on board
+Train 2 capacity of 20 arriving at station 1 in 4 minutes; currently 6 passengers on board
+-----At time marker 6 -> passengers waiting: 18	 on trains: 10	 active trains: 2-----
+
+Passenger arrived at time marker 7 at station 0 heading to 8
+Passenger arrived at time marker 7 at station 1 heading to 3
+Passenger arrived at time marker 7 at station 3 heading to 9
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 2 in 3 minutes; currently 4 passengers on board
+Train 2 capacity of 20 arriving at station 1 in 3 minutes; currently 6 passengers on board
+-----At time marker 7 -> passengers waiting: 21	 on trains: 10	 active trains: 2-----
+
+Passenger arrived at time marker 8 at station 1 heading to 7
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 2 in 2 minutes; currently 4 passengers on board
+Train 2 capacity of 20 arriving at station 1 in 2 minutes; currently 6 passengers on board
+-----At time marker 8 -> passengers waiting: 22	 on trains: 10	 active trains: 2-----
+
+Passenger arrived at time marker 9 at station 1 heading to 5
+Passenger arrived at time marker 9 at station 0 heading to 4
+Passenger arrived at time marker 9 at station 5 heading to 8
+Passenger arrived at time marker 9 at station 0 heading to 4
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 2 in 1 minutes; currently 4 passengers on board
+Train 2 capacity of 20 arriving at station 1 in 1 minutes; currently 6 passengers on board
+-----At time marker 9 -> passengers waiting: 26	 on trains: 10	 active trains: 2-----
+
+Passenger arrived at time marker 10 at station 4 heading to 7
+Passenger arrived at time marker 10 at station 0 heading to 5
+Passenger arrived at time marker 10 at station 2 heading to 4
+Passenger arrived at time marker 10 at station 2 heading to 8
+New train: Train 3 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 2; unloaded 1; loaded 6 passengers; Space left 11
+Train 1 capacity of 20 arriving at station 3 in 5 minutes; currently 9 passengers on board
+	Train 2 is at station 1; unloaded 1; loaded 3 passengers; Space left 12
+Train 2 capacity of 20 arriving at station 2 in 5 minutes; currently 8 passengers on board
+	Train 3 is at station 0; unloaded 0; loaded 4 passengers; Space left 16
+Train 3 capacity of 20 arriving at station 1 in 8 minutes; currently 4 passengers on board
+-----At time marker 10 -> passengers waiting: 17	 on trains: 21	 active trains: 3-----
+
+Passenger arrived at time marker 11 at station 0 heading to 7
+Passenger arrived at time marker 11 at station 2 heading to 8
+Passenger arrived at time marker 11 at station 0 heading to 3
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 3 in 4 minutes; currently 9 passengers on board
+Train 2 capacity of 20 arriving at station 2 in 4 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 1 in 7 minutes; currently 4 passengers on board
+-----At time marker 11 -> passengers waiting: 20	 on trains: 21	 active trains: 3-----
+
+Passenger arrived at time marker 12 at station 3 heading to 8
+Passenger arrived at time marker 12 at station 4 heading to 9
+Passenger arrived at time marker 12 at station 3 heading to 8
+Passenger arrived at time marker 12 at station 1 heading to 3
+Passenger arrived at time marker 12 at station 1 heading to 2
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 3 in 3 minutes; currently 9 passengers on board
+Train 2 capacity of 20 arriving at station 2 in 3 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 1 in 6 minutes; currently 4 passengers on board
+-----At time marker 12 -> passengers waiting: 25	 on trains: 21	 active trains: 3-----
+
+Passenger arrived at time marker 13 at station 1 heading to 5
+Passenger arrived at time marker 13 at station 4 heading to 6
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 3 in 2 minutes; currently 9 passengers on board
+Train 2 capacity of 20 arriving at station 2 in 2 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 1 in 5 minutes; currently 4 passengers on board
+-----At time marker 13 -> passengers waiting: 27	 on trains: 21	 active trains: 3-----
+
+Passenger arrived at time marker 14 at station 0 heading to 7
+Passenger arrived at time marker 14 at station 0 heading to 2
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 3 in 1 minutes; currently 9 passengers on board
+Train 2 capacity of 20 arriving at station 2 in 1 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 1 in 4 minutes; currently 4 passengers on board
+-----At time marker 14 -> passengers waiting: 29	 on trains: 21	 active trains: 3-----
+
+Passenger arrived at time marker 15 at station 1 heading to 5
+New train: Train 4 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 3; unloaded 0; loaded 9 passengers; Space left 2
+Train 1 capacity of 20 arriving at station 4 in 5 minutes; currently 18 passengers on board
+	Train 2 is at station 2; unloaded 0; loaded 1 passengers; Space left 11
+Train 2 capacity of 20 arriving at station 3 in 5 minutes; currently 9 passengers on board
+Train 3 capacity of 20 arriving at station 1 in 3 minutes; currently 4 passengers on board
+	Train 4 is at station 0; unloaded 0; loaded 4 passengers; Space left 16
+Train 4 capacity of 20 arriving at station 1 in 9 minutes; currently 4 passengers on board
+-----At time marker 15 -> passengers waiting: 16	 on trains: 35	 active trains: 4-----
+
+Passenger arrived at time marker 16 at station 2 heading to 9
+Passenger arrived at time marker 16 at station 7 heading to 8
+Passenger arrived at time marker 16 at station 3 heading to 4
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 4 in 4 minutes; currently 18 passengers on board
+Train 2 capacity of 20 arriving at station 3 in 4 minutes; currently 9 passengers on board
+Train 3 capacity of 20 arriving at station 1 in 2 minutes; currently 4 passengers on board
+Train 4 capacity of 20 arriving at station 1 in 8 minutes; currently 4 passengers on board
+-----At time marker 16 -> passengers waiting: 19	 on trains: 35	 active trains: 4-----
+
+Passenger arrived at time marker 17 at station 5 heading to 9
+Passenger arrived at time marker 17 at station 2 heading to 8
+Passenger arrived at time marker 17 at station 4 heading to 6
+Passenger arrived at time marker 17 at station 0 heading to 4
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 4 in 3 minutes; currently 18 passengers on board
+Train 2 capacity of 20 arriving at station 3 in 3 minutes; currently 9 passengers on board
+Train 3 capacity of 20 arriving at station 1 in 1 minutes; currently 4 passengers on board
+Train 4 capacity of 20 arriving at station 1 in 7 minutes; currently 4 passengers on board
+-----At time marker 17 -> passengers waiting: 23	 on trains: 35	 active trains: 4-----
+
+Passenger arrived at time marker 18 at station 8 heading to 9
+Passenger arrived at time marker 18 at station 3 heading to 8
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 4 in 2 minutes; currently 18 passengers on board
+Train 2 capacity of 20 arriving at station 3 in 2 minutes; currently 9 passengers on board
+	Train 3 is at station 1; unloaded 0; loaded 4 passengers; Space left 12
+Train 3 capacity of 20 arriving at station 2 in 8 minutes; currently 8 passengers on board
+Train 4 capacity of 20 arriving at station 1 in 6 minutes; currently 4 passengers on board
+-----At time marker 18 -> passengers waiting: 21	 on trains: 39	 active trains: 4-----
+
+Passenger arrived at time marker 19 at station 0 heading to 7
+Passenger arrived at time marker 19 at station 8 heading to 9
+Passenger arrived at time marker 19 at station 0 heading to 5
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 4 in 1 minutes; currently 18 passengers on board
+Train 2 capacity of 20 arriving at station 3 in 1 minutes; currently 9 passengers on board
+Train 3 capacity of 20 arriving at station 2 in 7 minutes; currently 8 passengers on board
+Train 4 capacity of 20 arriving at station 1 in 5 minutes; currently 4 passengers on board
+-----At time marker 19 -> passengers waiting: 24	 on trains: 39	 active trains: 4-----
+
+Passenger arrived at time marker 20 at station 2 heading to 3
+Passenger arrived at time marker 20 at station 0 heading to 7
+New train: Train 5 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 4; unloaded 4; loaded 6 passengers; Space left 0
+Train 1 capacity of 20 arriving at station 5 in 5 minutes; currently 20 passengers on board
+	Train 2 is at station 3; unloaded 3; loaded 2 passengers; Space left 12
+Train 2 capacity of 20 arriving at station 4 in 5 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 2 in 6 minutes; currently 8 passengers on board
+Train 4 capacity of 20 arriving at station 1 in 4 minutes; currently 4 passengers on board
+	Train 5 is at station 0; unloaded 0; loaded 4 passengers; Space left 16
+Train 5 capacity of 20 arriving at station 1 in 5 minutes; currently 4 passengers on board
+-----At time marker 20 -> passengers waiting: 14	 on trains: 44	 active trains: 5-----
+
+Passenger arrived at time marker 21 at station 0 heading to 8
+Passenger arrived at time marker 21 at station 0 heading to 3
+Passenger arrived at time marker 21 at station 0 heading to 8
+Passenger arrived at time marker 21 at station 7 heading to 8
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 5 in 4 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 4 in 4 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 2 in 5 minutes; currently 8 passengers on board
+Train 4 capacity of 20 arriving at station 1 in 3 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 1 in 4 minutes; currently 4 passengers on board
+-----At time marker 21 -> passengers waiting: 18	 on trains: 44	 active trains: 5-----
+
+Passenger arrived at time marker 22 at station 0 heading to 6
+Passenger arrived at time marker 22 at station 5 heading to 9
+Passenger arrived at time marker 22 at station 4 heading to 7
+Passenger arrived at time marker 22 at station 2 heading to 7
+Passenger arrived at time marker 22 at station 2 heading to 8
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 5 in 3 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 4 in 3 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 2 in 4 minutes; currently 8 passengers on board
+Train 4 capacity of 20 arriving at station 1 in 2 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 1 in 3 minutes; currently 4 passengers on board
+-----At time marker 22 -> passengers waiting: 23	 on trains: 44	 active trains: 5-----
+
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 5 in 2 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 4 in 2 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 2 in 3 minutes; currently 8 passengers on board
+Train 4 capacity of 20 arriving at station 1 in 1 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 1 in 2 minutes; currently 4 passengers on board
+-----At time marker 23 -> passengers waiting: 23	 on trains: 44	 active trains: 5-----
+
+Passenger arrived at time marker 24 at station 3 heading to 4
+Passenger arrived at time marker 24 at station 0 heading to 5
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 5 in 1 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 4 in 1 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 2 in 2 minutes; currently 8 passengers on board
+	Train 4 is at station 1; unloaded 0; loaded 0 passengers; Space left 16
+Train 4 capacity of 20 arriving at station 2 in 9 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 1 in 1 minutes; currently 4 passengers on board
+-----At time marker 24 -> passengers waiting: 25	 on trains: 44	 active trains: 5-----
+
+Passenger arrived at time marker 25 at station 3 heading to 9
+Passenger arrived at time marker 25 at station 0 heading to 5
+New train: Train 6 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 5; unloaded 4; loaded 3 passengers; Space left 1
+Train 1 capacity of 20 arriving at station 6 in 5 minutes; currently 19 passengers on board
+	Train 2 is at station 4; unloaded 1; loaded 2 passengers; Space left 11
+Train 2 capacity of 20 arriving at station 5 in 5 minutes; currently 9 passengers on board
+Train 3 capacity of 20 arriving at station 2 in 1 minutes; currently 8 passengers on board
+Train 4 capacity of 20 arriving at station 2 in 8 minutes; currently 4 passengers on board
+	Train 5 is at station 1; unloaded 0; loaded 0 passengers; Space left 16
+Train 5 capacity of 20 arriving at station 2 in 5 minutes; currently 4 passengers on board
+	Train 6 is at station 0; unloaded 0; loaded 6 passengers; Space left 14
+Train 6 capacity of 20 arriving at station 1 in 5 minutes; currently 6 passengers on board
+-----At time marker 25 -> passengers waiting: 16	 on trains: 50	 active trains: 6-----
+
+Passenger arrived at time marker 26 at station 4 heading to 8
+Passenger arrived at time marker 26 at station 0 heading to 8
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 6 in 4 minutes; currently 19 passengers on board
+Train 2 capacity of 20 arriving at station 5 in 4 minutes; currently 9 passengers on board
+	Train 3 is at station 2; unloaded 1; loaded 5 passengers; Space left 8
+Train 3 capacity of 20 arriving at station 3 in 8 minutes; currently 12 passengers on board
+Train 4 capacity of 20 arriving at station 2 in 7 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 2 in 4 minutes; currently 4 passengers on board
+Train 6 capacity of 20 arriving at station 1 in 4 minutes; currently 6 passengers on board
+-----At time marker 26 -> passengers waiting: 13	 on trains: 54	 active trains: 6-----
+
+Passenger arrived at time marker 27 at station 0 heading to 6
+Passenger arrived at time marker 27 at station 2 heading to 7
+Passenger arrived at time marker 27 at station 1 heading to 6
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 6 in 3 minutes; currently 19 passengers on board
+Train 2 capacity of 20 arriving at station 5 in 3 minutes; currently 9 passengers on board
+Train 3 capacity of 20 arriving at station 3 in 7 minutes; currently 12 passengers on board
+Train 4 capacity of 20 arriving at station 2 in 6 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 2 in 3 minutes; currently 4 passengers on board
+Train 6 capacity of 20 arriving at station 1 in 3 minutes; currently 6 passengers on board
+-----At time marker 27 -> passengers waiting: 16	 on trains: 54	 active trains: 6-----
+
+Passenger arrived at time marker 28 at station 0 heading to 4
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 6 in 2 minutes; currently 19 passengers on board
+Train 2 capacity of 20 arriving at station 5 in 2 minutes; currently 9 passengers on board
+Train 3 capacity of 20 arriving at station 3 in 6 minutes; currently 12 passengers on board
+Train 4 capacity of 20 arriving at station 2 in 5 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 2 in 2 minutes; currently 4 passengers on board
+Train 6 capacity of 20 arriving at station 1 in 2 minutes; currently 6 passengers on board
+-----At time marker 28 -> passengers waiting: 17	 on trains: 54	 active trains: 6-----
+
+Passenger arrived at time marker 29 at station 5 heading to 6
+Passenger arrived at time marker 29 at station 1 heading to 9
+Passenger arrived at time marker 29 at station 2 heading to 9
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 6 in 1 minutes; currently 19 passengers on board
+Train 2 capacity of 20 arriving at station 5 in 1 minutes; currently 9 passengers on board
+Train 3 capacity of 20 arriving at station 3 in 5 minutes; currently 12 passengers on board
+Train 4 capacity of 20 arriving at station 2 in 4 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 2 in 1 minutes; currently 4 passengers on board
+Train 6 capacity of 20 arriving at station 1 in 1 minutes; currently 6 passengers on board
+-----At time marker 29 -> passengers waiting: 20	 on trains: 54	 active trains: 6-----
+
+Passenger arrived at time marker 30 at station 7 heading to 9
+Passenger arrived at time marker 30 at station 2 heading to 4
+New train: Train 7 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 6; unloaded 2; loaded 3 passengers; Space left 0
+Train 1 capacity of 20 arriving at station 7 in 5 minutes; currently 20 passengers on board
+	Train 2 is at station 5; unloaded 2; loaded 1 passengers; Space left 12
+Train 2 capacity of 20 arriving at station 6 in 5 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 3 in 4 minutes; currently 12 passengers on board
+Train 4 capacity of 20 arriving at station 2 in 3 minutes; currently 4 passengers on board
+	Train 5 is at station 2; unloaded 0; loaded 3 passengers; Space left 13
+Train 5 capacity of 20 arriving at station 3 in 5 minutes; currently 7 passengers on board
+	Train 6 is at station 1; unloaded 0; loaded 2 passengers; Space left 12
+Train 6 capacity of 20 arriving at station 2 in 5 minutes; currently 8 passengers on board
+	Train 7 is at station 0; unloaded 0; loaded 3 passengers; Space left 17
+Train 7 capacity of 20 arriving at station 1 in 9 minutes; currently 3 passengers on board
+-----At time marker 30 -> passengers waiting: 10	 on trains: 62	 active trains: 7-----
+
+Passenger arrived at time marker 31 at station 4 heading to 9
+Passenger arrived at time marker 31 at station 0 heading to 1
+Passenger arrived at time marker 31 at station 3 heading to 8
+Passenger arrived at time marker 31 at station 2 heading to 9
+Passenger arrived at time marker 31 at station 7 heading to 9
+Passenger arrived at time marker 31 at station 3 heading to 8
+Passenger arrived at time marker 31 at station 0 heading to 2
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 7 in 4 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 6 in 4 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 3 in 3 minutes; currently 12 passengers on board
+Train 4 capacity of 20 arriving at station 2 in 2 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 3 in 4 minutes; currently 7 passengers on board
+Train 6 capacity of 20 arriving at station 2 in 4 minutes; currently 8 passengers on board
+Train 7 capacity of 20 arriving at station 1 in 8 minutes; currently 3 passengers on board
+-----At time marker 31 -> passengers waiting: 17	 on trains: 62	 active trains: 7-----
+
+Passenger arrived at time marker 32 at station 0 heading to 5
+Passenger arrived at time marker 32 at station 0 heading to 3
+Passenger arrived at time marker 32 at station 1 heading to 6
+Passenger arrived at time marker 32 at station 1 heading to 2
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 7 in 3 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 6 in 3 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 3 in 2 minutes; currently 12 passengers on board
+Train 4 capacity of 20 arriving at station 2 in 1 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 3 in 3 minutes; currently 7 passengers on board
+Train 6 capacity of 20 arriving at station 2 in 3 minutes; currently 8 passengers on board
+Train 7 capacity of 20 arriving at station 1 in 7 minutes; currently 3 passengers on board
+-----At time marker 32 -> passengers waiting: 21	 on trains: 62	 active trains: 7-----
+
+Passenger arrived at time marker 33 at station 4 heading to 8
+Passenger arrived at time marker 33 at station 1 heading to 6
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 7 in 2 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 6 in 2 minutes; currently 8 passengers on board
+Train 3 capacity of 20 arriving at station 3 in 1 minutes; currently 12 passengers on board
+	Train 4 is at station 2; unloaded 1; loaded 1 passengers; Space left 16
+Train 4 capacity of 20 arriving at station 3 in 9 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 3 in 2 minutes; currently 7 passengers on board
+Train 6 capacity of 20 arriving at station 2 in 2 minutes; currently 8 passengers on board
+Train 7 capacity of 20 arriving at station 1 in 6 minutes; currently 3 passengers on board
+-----At time marker 33 -> passengers waiting: 22	 on trains: 62	 active trains: 7-----
+
+Passenger arrived at time marker 34 at station 1 heading to 3
+Passenger arrived at time marker 34 at station 0 heading to 1
+Passenger arrived at time marker 34 at station 6 heading to 9
+Passenger arrived at time marker 34 at station 4 heading to 7
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 7 in 1 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 6 in 1 minutes; currently 8 passengers on board
+	Train 3 is at station 3; unloaded 2; loaded 4 passengers; Space left 6
+Train 3 capacity of 20 arriving at station 4 in 8 minutes; currently 14 passengers on board
+Train 4 capacity of 20 arriving at station 3 in 8 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 3 in 1 minutes; currently 7 passengers on board
+Train 6 capacity of 20 arriving at station 2 in 1 minutes; currently 8 passengers on board
+Train 7 capacity of 20 arriving at station 1 in 5 minutes; currently 3 passengers on board
+-----At time marker 34 -> passengers waiting: 22	 on trains: 64	 active trains: 7-----
+
+Passenger arrived at time marker 35 at station 2 heading to 5
+Passenger arrived at time marker 35 at station 0 heading to 1
+Passenger arrived at time marker 35 at station 0 heading to 2
+Passenger arrived at time marker 35 at station 1 heading to 3
+Passenger arrived at time marker 35 at station 5 heading to 8
+New train: Train 8 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 7; unloaded 5; loaded 5 passengers; Space left 0
+Train 1 capacity of 20 arriving at station 8 in 5 minutes; currently 20 passengers on board
+	Train 2 is at station 6; unloaded 3; loaded 1 passengers; Space left 14
+Train 2 capacity of 20 arriving at station 7 in 5 minutes; currently 6 passengers on board
+Train 3 capacity of 20 arriving at station 4 in 7 minutes; currently 14 passengers on board
+Train 4 capacity of 20 arriving at station 3 in 7 minutes; currently 4 passengers on board
+	Train 5 is at station 3; unloaded 0; loaded 0 passengers; Space left 13
+Train 5 capacity of 20 arriving at station 4 in 5 minutes; currently 7 passengers on board
+	Train 6 is at station 2; unloaded 0; loaded 1 passengers; Space left 11
+Train 6 capacity of 20 arriving at station 3 in 5 minutes; currently 9 passengers on board
+Train 7 capacity of 20 arriving at station 1 in 4 minutes; currently 3 passengers on board
+	Train 8 is at station 0; unloaded 0; loaded 7 passengers; Space left 13
+Train 8 capacity of 20 arriving at station 1 in 8 minutes; currently 7 passengers on board
+-----At time marker 35 -> passengers waiting: 13	 on trains: 70	 active trains: 8-----
+
+Passenger arrived at time marker 36 at station 0 heading to 1
+Passenger arrived at time marker 36 at station 2 heading to 5
+Passenger arrived at time marker 36 at station 0 heading to 3
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 8 in 4 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 7 in 4 minutes; currently 6 passengers on board
+Train 3 capacity of 20 arriving at station 4 in 6 minutes; currently 14 passengers on board
+Train 4 capacity of 20 arriving at station 3 in 6 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 4 in 4 minutes; currently 7 passengers on board
+Train 6 capacity of 20 arriving at station 3 in 4 minutes; currently 9 passengers on board
+Train 7 capacity of 20 arriving at station 1 in 3 minutes; currently 3 passengers on board
+Train 8 capacity of 20 arriving at station 1 in 7 minutes; currently 7 passengers on board
+-----At time marker 36 -> passengers waiting: 16	 on trains: 70	 active trains: 8-----
+
+Passenger arrived at time marker 37 at station 3 heading to 5
+Passenger arrived at time marker 37 at station 3 heading to 7
+Passenger arrived at time marker 37 at station 1 heading to 9
+Passenger arrived at time marker 37 at station 0 heading to 2
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 8 in 3 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 7 in 3 minutes; currently 6 passengers on board
+Train 3 capacity of 20 arriving at station 4 in 5 minutes; currently 14 passengers on board
+Train 4 capacity of 20 arriving at station 3 in 5 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 4 in 3 minutes; currently 7 passengers on board
+Train 6 capacity of 20 arriving at station 3 in 3 minutes; currently 9 passengers on board
+Train 7 capacity of 20 arriving at station 1 in 2 minutes; currently 3 passengers on board
+Train 8 capacity of 20 arriving at station 1 in 6 minutes; currently 7 passengers on board
+-----At time marker 37 -> passengers waiting: 20	 on trains: 70	 active trains: 8-----
+
+Passenger arrived at time marker 38 at station 0 heading to 5
+Passenger arrived at time marker 38 at station 6 heading to 9
+Passenger arrived at time marker 38 at station 1 heading to 2
+Passenger arrived at time marker 38 at station 3 heading to 5
+Passenger arrived at time marker 38 at station 0 heading to 9
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 8 in 2 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 7 in 2 minutes; currently 6 passengers on board
+Train 3 capacity of 20 arriving at station 4 in 4 minutes; currently 14 passengers on board
+Train 4 capacity of 20 arriving at station 3 in 4 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 4 in 2 minutes; currently 7 passengers on board
+Train 6 capacity of 20 arriving at station 3 in 2 minutes; currently 9 passengers on board
+Train 7 capacity of 20 arriving at station 1 in 1 minutes; currently 3 passengers on board
+Train 8 capacity of 20 arriving at station 1 in 5 minutes; currently 7 passengers on board
+-----At time marker 38 -> passengers waiting: 25	 on trains: 70	 active trains: 8-----
+
+Passenger arrived at time marker 39 at station 2 heading to 4
+Passenger arrived at time marker 39 at station 0 heading to 3
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 8 in 1 minutes; currently 20 passengers on board
+Train 2 capacity of 20 arriving at station 7 in 1 minutes; currently 6 passengers on board
+Train 3 capacity of 20 arriving at station 4 in 3 minutes; currently 14 passengers on board
+Train 4 capacity of 20 arriving at station 3 in 3 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 4 in 1 minutes; currently 7 passengers on board
+Train 6 capacity of 20 arriving at station 3 in 1 minutes; currently 9 passengers on board
+	Train 7 is at station 1; unloaded 0; loaded 7 passengers; Space left 10
+Train 7 capacity of 20 arriving at station 2 in 9 minutes; currently 10 passengers on board
+Train 8 capacity of 20 arriving at station 1 in 4 minutes; currently 7 passengers on board
+-----At time marker 39 -> passengers waiting: 20	 on trains: 77	 active trains: 8-----
+
+Passenger arrived at time marker 40 at station 3 heading to 4
+Passenger arrived at time marker 40 at station 0 heading to 7
+Passenger arrived at time marker 40 at station 1 heading to 7
+Passenger arrived at time marker 40 at station 6 heading to 8
+New train: Train 9 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 8; unloaded 12; loaded 2 passengers; Space left 10
+Train 1 capacity of 20 arriving at station 9 in 5 minutes; currently 10 passengers on board
+	Train 2 is at station 7; unloaded 2; loaded 1 passengers; Space left 15
+Train 2 capacity of 20 arriving at station 8 in 5 minutes; currently 5 passengers on board
+Train 3 capacity of 20 arriving at station 4 in 2 minutes; currently 14 passengers on board
+Train 4 capacity of 20 arriving at station 3 in 2 minutes; currently 4 passengers on board
+	Train 5 is at station 4; unloaded 2; loaded 4 passengers; Space left 11
+Train 5 capacity of 20 arriving at station 5 in 5 minutes; currently 9 passengers on board
+	Train 6 is at station 3; unloaded 1; loaded 4 passengers; Space left 8
+Train 6 capacity of 20 arriving at station 4 in 5 minutes; currently 12 passengers on board
+Train 7 capacity of 20 arriving at station 2 in 8 minutes; currently 10 passengers on board
+Train 8 capacity of 20 arriving at station 1 in 3 minutes; currently 7 passengers on board
+	Train 9 is at station 0; unloaded 0; loaded 7 passengers; Space left 13
+Train 9 capacity of 20 arriving at station 1 in 7 minutes; currently 7 passengers on board
+-----At time marker 40 -> passengers waiting: 6	 on trains: 78	 active trains: 9-----
+
+Passenger arrived at time marker 41 at station 6 heading to 9
+Passenger arrived at time marker 41 at station 1 heading to 4
+Passenger arrived at time marker 41 at station 0 heading to 1
+Passenger arrived at time marker 41 at station 2 heading to 3
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 9 in 4 minutes; currently 10 passengers on board
+Train 2 capacity of 20 arriving at station 8 in 4 minutes; currently 5 passengers on board
+Train 3 capacity of 20 arriving at station 4 in 1 minutes; currently 14 passengers on board
+Train 4 capacity of 20 arriving at station 3 in 1 minutes; currently 4 passengers on board
+Train 5 capacity of 20 arriving at station 5 in 4 minutes; currently 9 passengers on board
+Train 6 capacity of 20 arriving at station 4 in 4 minutes; currently 12 passengers on board
+Train 7 capacity of 20 arriving at station 2 in 7 minutes; currently 10 passengers on board
+Train 8 capacity of 20 arriving at station 1 in 2 minutes; currently 7 passengers on board
+Train 9 capacity of 20 arriving at station 1 in 6 minutes; currently 7 passengers on board
+-----At time marker 41 -> passengers waiting: 10	 on trains: 78	 active trains: 9-----
+
+Passenger arrived at time marker 42 at station 0 heading to 8
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 9 in 3 minutes; currently 10 passengers on board
+Train 2 capacity of 20 arriving at station 8 in 3 minutes; currently 5 passengers on board
+	Train 3 is at station 4; unloaded 3; loaded 0 passengers; Space left 9
+Train 3 capacity of 20 arriving at station 5 in 8 minutes; currently 11 passengers on board
+	Train 4 is at station 3; unloaded 1; loaded 0 passengers; Space left 17
+Train 4 capacity of 20 arriving at station 4 in 9 minutes; currently 3 passengers on board
+Train 5 capacity of 20 arriving at station 5 in 3 minutes; currently 9 passengers on board
+Train 6 capacity of 20 arriving at station 4 in 3 minutes; currently 12 passengers on board
+Train 7 capacity of 20 arriving at station 2 in 6 minutes; currently 10 passengers on board
+Train 8 capacity of 20 arriving at station 1 in 1 minutes; currently 7 passengers on board
+Train 9 capacity of 20 arriving at station 1 in 5 minutes; currently 7 passengers on board
+-----At time marker 42 -> passengers waiting: 11	 on trains: 74	 active trains: 9-----
+
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 9 in 2 minutes; currently 10 passengers on board
+Train 2 capacity of 20 arriving at station 8 in 2 minutes; currently 5 passengers on board
+Train 3 capacity of 20 arriving at station 5 in 7 minutes; currently 11 passengers on board
+Train 4 capacity of 20 arriving at station 4 in 8 minutes; currently 3 passengers on board
+Train 5 capacity of 20 arriving at station 5 in 2 minutes; currently 9 passengers on board
+Train 6 capacity of 20 arriving at station 4 in 2 minutes; currently 12 passengers on board
+Train 7 capacity of 20 arriving at station 2 in 5 minutes; currently 10 passengers on board
+	Train 8 is at station 1; unloaded 3; loaded 2 passengers; Space left 14
+Train 8 capacity of 20 arriving at station 2 in 8 minutes; currently 6 passengers on board
+Train 9 capacity of 20 arriving at station 1 in 4 minutes; currently 7 passengers on board
+-----At time marker 43 -> passengers waiting: 9	 on trains: 73	 active trains: 9-----
+
+Passenger arrived at time marker 44 at station 3 heading to 9
+Passenger arrived at time marker 44 at station 8 heading to 9
+Passenger arrived at time marker 44 at station 3 heading to 8
+Passenger arrived at time marker 44 at station 0 heading to 6
+
+>> Moving each train <<
+Train 1 capacity of 20 arriving at station 9 in 1 minutes; currently 10 passengers on board
+Train 2 capacity of 20 arriving at station 8 in 1 minutes; currently 5 passengers on board
+Train 3 capacity of 20 arriving at station 5 in 6 minutes; currently 11 passengers on board
+Train 4 capacity of 20 arriving at station 4 in 7 minutes; currently 3 passengers on board
+Train 5 capacity of 20 arriving at station 5 in 1 minutes; currently 9 passengers on board
+Train 6 capacity of 20 arriving at station 4 in 1 minutes; currently 12 passengers on board
+Train 7 capacity of 20 arriving at station 2 in 4 minutes; currently 10 passengers on board
+Train 8 capacity of 20 arriving at station 2 in 7 minutes; currently 6 passengers on board
+Train 9 capacity of 20 arriving at station 1 in 3 minutes; currently 7 passengers on board
+-----At time marker 44 -> passengers waiting: 13	 on trains: 73	 active trains: 9-----
+
+New train: Train 10 capacity of 20 arriving at station 0 in 1 minutes; currently 0 passengers on board
+
+>> Moving each train <<
+	Train 1 is at station 9; unloaded 10; loaded 0 passengers; Space left 20
+Train 1 capacity of 20 arriving at station 9 in 0 minutes; currently 0 passengers on board
+	Train 2 is at station 8; unloaded 3; loaded 1 passengers; Space left 17
+Train 2 capacity of 20 arriving at station 9 in 5 minutes; currently 3 passengers on board
+Train 3 capacity of 20 arriving at station 5 in 5 minutes; currently 11 passengers on board
+Train 4 capacity of 20 arriving at station 4 in 6 minutes; currently 3 passengers on board
+	Train 5 is at station 5; unloaded 1; loaded 1 passengers; Space left 11
+Train 5 capacity of 20 arriving at station 6 in 5 minutes; currently 9 passengers on board
+	Train 6 is at station 4; unloaded 1; loaded 0 passengers; Space left 9
+Train 6 capacity of 20 arriving at station 5 in 5 minutes; currently 11 passengers on board
+Train 7 capacity of 20 arriving at station 2 in 3 minutes; currently 10 passengers on board
+Train 8 capacity of 20 arriving at station 2 in 6 minutes; currently 6 passengers on board
+Train 9 capacity of 20 arriving at station 1 in 2 minutes; currently 7 passengers on board
+	Train 10 is at station 0; unloaded 0; loaded 3 passengers; Space left 17
+Train 10 capacity of 20 arriving at station 1 in 6 minutes; currently 3 passengers on board
+-----At time marker 45 -> passengers waiting: 8	 on trains: 63	 active trains: 9-----
+
+
+>> Moving each train <<
+Train 2 capacity of 20 arriving at station 9 in 4 minutes; currently 3 passengers on board
+Train 3 capacity of 20 arriving at station 5 in 4 minutes; currently 11 passengers on board
+Train 4 capacity of 20 arriving at station 4 in 5 minutes; currently 3 passengers on board
+Train 5 capacity of 20 arriving at station 6 in 4 minutes; currently 9 passengers on board
+Train 6 capacity of 20 arriving at station 5 in 4 minutes; currently 11 passengers on board
+Train 7 capacity of 20 arriving at station 2 in 2 minutes; currently 10 passengers on board
+Train 8 capacity of 20 arriving at station 2 in 5 minutes; currently 6 passengers on board
+Train 9 capacity of 20 arriving at station 1 in 1 minutes; currently 7 passengers on board
+Train 10 capacity of 20 arriving at station 1 in 5 minutes; currently 3 passengers on board
+-----At time marker 46 -> passengers waiting: 8	 on trains: 63	 active trains: 9-----
+
+Passenger arrived at time marker 47 at station 0 heading to 5
+Passenger arrived at time marker 47 at station 4 heading to 8
+Passenger arrived at time marker 47 at station 4 heading to 7
+Passenger arrived at time marker 47 at station 0 heading to 4
+
+>> Moving each train <<
+Train 2 capacity of 20 arriving at station 9 in 3 minutes; currently 3 passengers on board
+Train 3 capacity of 20 arriving at station 5 in 3 minutes; currently 11 passengers on board
+Train 4 capacity of 20 arriving at station 4 in 4 minutes; currently 3 passengers on board
+Train 5 capacity of 20 arriving at station 6 in 3 minutes; currently 9 passengers on board
+Train 6 capacity of 20 arriving at station 5 in 3 minutes; currently 11 passengers on board
+Train 7 capacity of 20 arriving at station 2 in 1 minutes; currently 10 passengers on board
+Train 8 capacity of 20 arriving at station 2 in 4 minutes; currently 6 passengers on board
+	Train 9 is at station 1; unloaded 1; loaded 0 passengers; Space left 14
+Train 9 capacity of 20 arriving at station 2 in 8 minutes; currently 6 passengers on board
+Train 10 capacity of 20 arriving at station 1 in 4 minutes; currently 3 passengers on board
+-----At time marker 47 -> passengers waiting: 12	 on trains: 62	 active trains: 9-----
+
+Passenger arrived at time marker 48 at station 3 heading to 5
+Passenger arrived at time marker 48 at station 7 heading to 9
+Passenger arrived at time marker 48 at station 1 heading to 9
+Passenger arrived at time marker 48 at station 7 heading to 9
+Passenger arrived at time marker 48 at station 3 heading to 6
+
+>> Moving each train <<
+Train 2 capacity of 20 arriving at station 9 in 2 minutes; currently 3 passengers on board
+Train 3 capacity of 20 arriving at station 5 in 2 minutes; currently 11 passengers on board
+Train 4 capacity of 20 arriving at station 4 in 3 minutes; currently 3 passengers on board
+Train 5 capacity of 20 arriving at station 6 in 2 minutes; currently 9 passengers on board
+Train 6 capacity of 20 arriving at station 5 in 2 minutes; currently 11 passengers on board
+	Train 7 is at station 2; unloaded 2; loaded 3 passengers; Space left 9
+Train 7 capacity of 20 arriving at station 3 in 5 minutes; currently 11 passengers on board
+Train 8 capacity of 20 arriving at station 2 in 3 minutes; currently 6 passengers on board
+Train 9 capacity of 20 arriving at station 2 in 7 minutes; currently 6 passengers on board
+Train 10 capacity of 20 arriving at station 1 in 3 minutes; currently 3 passengers on board
+-----At time marker 48 -> passengers waiting: 14	 on trains: 63	 active trains: 9-----
+
+Passenger arrived at time marker 49 at station 1 heading to 8
+
+>> Moving each train <<
+Train 2 capacity of 20 arriving at station 9 in 1 minutes; currently 3 passengers on board
+Train 3 capacity of 20 arriving at station 5 in 1 minutes; currently 11 passengers on board
+Train 4 capacity of 20 arriving at station 4 in 2 minutes; currently 3 passengers on board
+Train 5 capacity of 20 arriving at station 6 in 1 minutes; currently 9 passengers on board
+Train 6 capacity of 20 arriving at station 5 in 1 minutes; currently 11 passengers on board
+Train 7 capacity of 20 arriving at station 3 in 4 minutes; currently 11 passengers on board
+Train 8 capacity of 20 arriving at station 2 in 2 minutes; currently 6 passengers on board
+Train 9 capacity of 20 arriving at station 2 in 6 minutes; currently 6 passengers on board
+Train 10 capacity of 20 arriving at station 1 in 2 minutes; currently 3 passengers on board
+-----At time marker 49 -> passengers waiting: 15	 on trains: 63	 active trains: 9-----
+
+*****************  Final Report  ***************
+The total number of passengers is 150
+The number of passengers currently on a train 63
+The number of passengers delivered is 72
+The number of passengers waiting is 15
+The average wait time for passengers that have boarded is 5.87
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+																SCHEDULING SIMULATION OUPUT
+
+a) SORT BY PRIORITY OUPUT
+
+Enter either 1 or 2: 1 - for sort by priority, 2 - for sort by length
+1
+Time Marker 0         waiting: 0
+        executing: NONE
+        created: Job #1 priority(1), created at 0, time left 4
+Time Marker 1         waiting: 0
+        executing: Job #1 priority(1), created at 0, time left 4
+        created: Job #2 priority(1), created at 1, time left 1
+Time Marker 2         waiting: 1
+        executing: Job #1 priority(1), created at 0, time left 3
+        created: Job #3 priority(4), created at 2, time left 3
+Time Marker 3         waiting: 2
+        executing: Job #1 priority(1), created at 0, time left 2
+        created: Job #4 priority(2), created at 3, time left 3
+Time Marker 4         waiting: 3
+        executing: Job #2 priority(1), created at 1, time left 1
+        completed: Job #4 at time 
+        created: Job #5 priority(4), created at 4, time left 4
+Time Marker 5         waiting: 3
+        executing: Job #1 priority(1), created at 0, time left 1
+        completed: Job #5 at time 
+        created: Job #6 priority(3), created at 5, time left 2
+Time Marker 6         waiting: 3
+        executing: Job #4 priority(2), created at 3, time left 3
+Time Marker 7         waiting: 3
+        executing: Job #4 priority(2), created at 3, time left 2
+Time Marker 8         waiting: 3
+        executing: Job #4 priority(2), created at 3, time left 1
+        completed: Job #6 at time 
+Time Marker 9         waiting: 2
+        executing: Job #6 priority(3), created at 5, time left 2
+Time Marker 10         waiting: 2
+        executing: Job #6 priority(3), created at 5, time left 1
+        completed: Job #6 at time 
+Time Marker 11         waiting: 1
+        executing: Job #5 priority(4), created at 4, time left 4
+        created: Job #7 priority(1), created at 11, time left 4
+Time Marker 12         waiting: 2
+        executing: Job #5 priority(4), created at 4, time left 3
+Time Marker 13         waiting: 2
+        executing: Job #5 priority(4), created at 4, time left 2
+Time Marker 14         waiting: 2
+        executing: Job #5 priority(4), created at 4, time left 1
+        completed: Job #7 at time 
+        created: Job #8 priority(3), created at 14, time left 4
+Time Marker 15         waiting: 2
+        executing: Job #7 priority(1), created at 11, time left 4
+        created: Job #9 priority(1), created at 15, time left 5
+Time Marker 16         waiting: 3
+        executing: Job #7 priority(1), created at 11, time left 3
+Time Marker 17         waiting: 3
+        executing: Job #7 priority(1), created at 11, time left 2
+Time Marker 18         waiting: 3
+        executing: Job #7 priority(1), created at 11, time left 1
+        completed: Job #9 at time 
+Time Marker 19         waiting: 2
+        executing: Job #9 priority(1), created at 15, time left 5
+        created: Job #10 priority(2), created at 19, time left 4
+Time Marker 20         waiting: 3
+        executing: Job #9 priority(1), created at 15, time left 4
+Time Marker 21         waiting: 3
+        executing: Job #9 priority(1), created at 15, time left 3
+Time Marker 22         waiting: 3
+        executing: Job #9 priority(1), created at 15, time left 2
+        created: Job #11 priority(3), created at 22, time left 5
+Time Marker 23         waiting: 4
+        executing: Job #9 priority(1), created at 15, time left 1
+        completed: Job #11 at time 
+Time Marker 24         waiting: 3
+        executing: Job #10 priority(2), created at 19, time left 4
+Time Marker 25         waiting: 3
+        executing: Job #10 priority(2), created at 19, time left 3
+        created: Job #12 priority(2), created at 25, time left 1
+Time Marker 26         waiting: 4
+        executing: Job #10 priority(2), created at 19, time left 2
+        created: Job #13 priority(3), created at 26, time left 2
+Time Marker 27         waiting: 5
+        executing: Job #12 priority(2), created at 25, time left 1
+        completed: Job #13 at time 
+Time Marker 28         waiting: 4
+        executing: Job #10 priority(2), created at 19, time left 1
+        completed: Job #13 at time 
+Time Marker 29         waiting: 3
+        executing: Job #13 priority(3), created at 26, time left 2
+        created: Job #14 priority(4), created at 29, time left 4
+Time Marker 30         waiting: 4
+        executing: Job #13 priority(3), created at 26, time left 1
+        completed: Job #14 at time 
+        created: Job #15 priority(1), created at 30, time left 4
+Time Marker 31         waiting: 4
+        executing: Job #11 priority(3), created at 22, time left 5
+        created: Job #16 priority(2), created at 31, time left 5
+Time Marker 32         waiting: 5
+        executing: Job #11 priority(3), created at 22, time left 4
+Time Marker 33         waiting: 5
+        executing: Job #11 priority(3), created at 22, time left 3
+        created: Job #17 priority(4), created at 33, time left 3
+Time Marker 34         waiting: 6
+        executing: Job #15 priority(1), created at 30, time left 4
+        created: Job #18 priority(4), created at 34, time left 4
+Time Marker 35         waiting: 7
+        executing: Job #15 priority(1), created at 30, time left 3
+        created: Job #19 priority(1), created at 35, time left 4
+Time Marker 36         waiting: 8
+        executing: Job #15 priority(1), created at 30, time left 2
+Time Marker 37         waiting: 8
+        executing: Job #15 priority(1), created at 30, time left 1
+        completed: Job #19 at time 
+        created: Job #20 priority(4), created at 37, time left 2
+Time Marker 38         waiting: 8
+        executing: Job #19 priority(1), created at 35, time left 4
+Time Marker 39         waiting: 8
+        executing: Job #19 priority(1), created at 35, time left 3
+        created: Job #21 priority(2), created at 39, time left 1
+Time Marker 40         waiting: 9
+        executing: Job #19 priority(1), created at 35, time left 2
+Time Marker 41         waiting: 9
+        executing: Job #19 priority(1), created at 35, time left 1
+        completed: Job #21 at time 
+Time Marker 42         waiting: 8
+        executing: Job #16 priority(2), created at 31, time left 5
+        created: Job #22 priority(3), created at 42, time left 4
+Time Marker 43         waiting: 9
+        executing: Job #16 priority(2), created at 31, time left 4
+        created: Job #23 priority(1), created at 43, time left 3
+Time Marker 44         waiting: 10
+        executing: Job #16 priority(2), created at 31, time left 3
+        created: Job #24 priority(4), created at 44, time left 2
+Time Marker 45         waiting: 11
+        executing: Job #23 priority(1), created at 43, time left 3
+        created: Job #25 priority(3), created at 45, time left 4
+Time Marker 46         waiting: 12
+        executing: Job #23 priority(1), created at 43, time left 2
+Time Marker 47         waiting: 12
+        executing: Job #23 priority(1), created at 43, time left 1
+        completed: Job #25 at time 
+Time Marker 48         waiting: 11
+        executing: Job #21 priority(2), created at 39, time left 1
+        completed: Job #25 at time 
+Time Marker 49         waiting: 10
+        executing: Job #16 priority(2), created at 31, time left 2
+        created: Job #26 priority(3), created at 49, time left 4
+Time Marker 50         waiting: 11
+        executing: Job #16 priority(2), created at 31, time left 1
+        completed: Job #26 at time 
+Time Marker 51         waiting: 10
+        executing: Job #22 priority(3), created at 42, time left 4
+        created: Job #27 priority(1), created at 51, time left 3
+Time Marker 52         waiting: 11
+        executing: Job #22 priority(3), created at 42, time left 3
+Time Marker 53         waiting: 11
+        executing: Job #22 priority(3), created at 42, time left 2
+        created: Job #28 priority(2), created at 53, time left 4
+Time Marker 54         waiting: 12
+        executing: Job #27 priority(1), created at 51, time left 3
+        created: Job #29 priority(4), created at 54, time left 4
+Time Marker 55         waiting: 13
+        executing: Job #27 priority(1), created at 51, time left 2
+Time Marker 56         waiting: 13
+        executing: Job #27 priority(1), created at 51, time left 1
+        completed: Job #29 at time 
+Time Marker 57         waiting: 12
+        executing: Job #28 priority(2), created at 53, time left 4
+Time Marker 58         waiting: 12
+        executing: Job #28 priority(2), created at 53, time left 3
+Time Marker 59         waiting: 12
+        executing: Job #28 priority(2), created at 53, time left 2
+Time Marker 60         waiting: 12
+        executing: Job #28 priority(2), created at 53, time left 1
+        completed: Job #29 at time 
+Time Marker 61         waiting: 11
+        executing: Job #8 priority(3), created at 14, time left 4
+Time Marker 62         waiting: 11
+        executing: Job #8 priority(3), created at 14, time left 3
+Time Marker 63         waiting: 11
+        executing: Job #8 priority(3), created at 14, time left 2
+        created: Job #30 priority(3), created at 63, time left 3
+Time Marker 64         waiting: 12
+        executing: Job #11 priority(3), created at 22, time left 2
+        created: Job #31 priority(1), created at 64, time left 3
+Time Marker 65         waiting: 13
+        executing: Job #11 priority(3), created at 22, time left 1
+        completed: Job #31 at time 
+        created: Job #32 priority(1), created at 65, time left 4
+Time Marker 66         waiting: 13
+        executing: Job #31 priority(1), created at 64, time left 3
+Time Marker 67         waiting: 13
+        executing: Job #31 priority(1), created at 64, time left 2
+        created: Job #33 priority(1), created at 67, time left 1
+Time Marker 68         waiting: 14
+        executing: Job #31 priority(1), created at 64, time left 1
+        completed: Job #33 at time 
+Time Marker 69         waiting: 13
+        executing: Job #32 priority(1), created at 65, time left 4
+Time Marker 70         waiting: 13
+        executing: Job #32 priority(1), created at 65, time left 3
+Time Marker 71         waiting: 13
+        executing: Job #32 priority(1), created at 65, time left 2
+Time Marker 72         waiting: 13
+        executing: Job #32 priority(1), created at 65, time left 1
+        completed: Job #33 at time 
+Time Marker 73         waiting: 12
+        executing: Job #33 priority(1), created at 67, time left 1
+        completed: Job #33 at time 
+        created: Job #34 priority(2), created at 73, time left 5
+Time Marker 74         waiting: 12
+        executing: Job #22 priority(3), created at 42, time left 1
+        completed: Job #34 at time 
+Time Marker 75         waiting: 11
+        executing: Job #34 priority(2), created at 73, time left 5
+Time Marker 76         waiting: 11
+        executing: Job #34 priority(2), created at 73, time left 4
+Time Marker 77         waiting: 11
+        executing: Job #34 priority(2), created at 73, time left 3
+Time Marker 78         waiting: 11
+        executing: Job #34 priority(2), created at 73, time left 2
+        created: Job #35 priority(2), created at 78, time left 4
+Time Marker 79         waiting: 12
+        executing: Job #35 priority(2), created at 78, time left 4
+Time Marker 80         waiting: 12
+        executing: Job #35 priority(2), created at 78, time left 3
+Time Marker 81         waiting: 12
+        executing: Job #35 priority(2), created at 78, time left 2
+Time Marker 82         waiting: 12
+        executing: Job #35 priority(2), created at 78, time left 1
+        completed: Job #35 at time 
+Time Marker 83         waiting: 11
+        executing: Job #34 priority(2), created at 73, time left 1
+        completed: Job #35 at time 
+Time Marker 84         waiting: 10
+        executing: Job #8 priority(3), created at 14, time left 1
+        completed: Job #35 at time 
+        created: Job #36 priority(1), created at 84, time left 5
+Time Marker 85         waiting: 10
+        executing: Job #26 priority(3), created at 49, time left 4
+Time Marker 86         waiting: 10
+        executing: Job #26 priority(3), created at 49, time left 3
+Time Marker 87         waiting: 10
+        executing: Job #26 priority(3), created at 49, time left 2
+Time Marker 88         waiting: 10
+        executing: Job #26 priority(3), created at 49, time left 1
+        completed: Job #36 at time 
+Time Marker 89         waiting: 9
+        executing: Job #36 priority(1), created at 84, time left 5
+        created: Job #37 priority(4), created at 89, time left 4
+Time Marker 90         waiting: 10
+        executing: Job #36 priority(1), created at 84, time left 4
+Time Marker 91         waiting: 10
+        executing: Job #36 priority(1), created at 84, time left 3
+        created: Job #38 priority(4), created at 91, time left 3
+Time Marker 92         waiting: 11
+        executing: Job #36 priority(1), created at 84, time left 2
+        created: Job #39 priority(3), created at 92, time left 5
+Time Marker 93         waiting: 12
+        executing: Job #36 priority(1), created at 84, time left 1
+        completed: Job #39 at time 
+Time Marker 94         waiting: 11
+        executing: Job #30 priority(3), created at 63, time left 3
+        created: Job #40 priority(1), created at 94, time left 1
+Time Marker 95         waiting: 12
+        executing: Job #30 priority(3), created at 63, time left 2
+Time Marker 96         waiting: 12
+        executing: Job #30 priority(3), created at 63, time left 1
+        completed: Job #40 at time 
+        created: Job #41 priority(4), created at 96, time left 5
+Time Marker 97         waiting: 12
+        executing: Job #40 priority(1), created at 94, time left 1
+        completed: Job #41 at time 
+Time Marker 98         waiting: 11
+        executing: Job #25 priority(3), created at 45, time left 4
+Time Marker 99         waiting: 11
+        executing: Job #25 priority(3), created at 45, time left 3
+        created: Job #42 priority(4), created at 99, time left 1
+
+********************** Final Report: ***************************
+    Active jobs: 
+Job #39 priority(3), created at 92, time left 5
+Job #42 priority(4), created at 99, time left 1
+Job #38 priority(4), created at 91, time left 3
+Job #37 priority(4), created at 89, time left 4
+Job #3 priority(4), created at 2, time left 3
+Job #20 priority(4), created at 37, time left 2
+Job #14 priority(4), created at 29, time left 4
+Job #24 priority(4), created at 44, time left 2
+Job #18 priority(4), created at 34, time left 4
+Job #17 priority(4), created at 33, time left 3
+Job #41 priority(4), created at 96, time left 5
+Job #29 priority(4), created at 54, time left 4
+
+The number of jobs currently executing is 12
+The number of completed jobs is 30
+The total number of jobs is 42
+The average time left for unfinished jobs is 3.33
+
+
+
+b) SORT BY LENGTH 
+
+
+Enter either 1 or 2: 1 - for sort by priority, 2 - for sort by length
+2
+Time Marker 0         waiting: 0
+        executing: NONE
+        created: Job #1 priority(1), created at 0, time left 4
+Time Marker 1         waiting: 0
+        executing: Job #1 priority(1), created at 0, time left 4
+        created: Job #2 priority(1), created at 1, time left 1
+Time Marker 2         waiting: 1
+        executing: Job #1 priority(1), created at 0, time left 3
+        created: Job #3 priority(4), created at 2, time left 3
+Time Marker 3         waiting: 2
+        executing: Job #1 priority(1), created at 0, time left 2
+        created: Job #4 priority(2), created at 3, time left 3
+Time Marker 4         waiting: 3
+        executing: Job #2 priority(1), created at 1, time left 1
+        completed: Job #4 at time 
+        created: Job #5 priority(4), created at 4, time left 4
+Time Marker 5         waiting: 3
+        executing: Job #1 priority(1), created at 0, time left 1
+        completed: Job #5 at time 
+        created: Job #6 priority(3), created at 5, time left 2
+Time Marker 6         waiting: 3
+        executing: Job #4 priority(2), created at 3, time left 3
+Time Marker 7         waiting: 3
+        executing: Job #4 priority(2), created at 3, time left 2
+Time Marker 8         waiting: 3
+        executing: Job #4 priority(2), created at 3, time left 1
+        completed: Job #6 at time 
+Time Marker 9         waiting: 2
+        executing: Job #6 priority(3), created at 5, time left 2
+Time Marker 10         waiting: 2
+        executing: Job #6 priority(3), created at 5, time left 1
+        completed: Job #6 at time 
+Time Marker 11         waiting: 1
+        executing: Job #3 priority(4), created at 2, time left 3
+        created: Job #7 priority(1), created at 11, time left 4
+Time Marker 12         waiting: 2
+        executing: Job #3 priority(4), created at 2, time left 2
+Time Marker 13         waiting: 2
+        executing: Job #3 priority(4), created at 2, time left 1
+        completed: Job #7 at time 
+Time Marker 14         waiting: 1
+        executing: Job #5 priority(4), created at 4, time left 4
+        created: Job #8 priority(3), created at 14, time left 4
+Time Marker 15         waiting: 2
+        executing: Job #5 priority(4), created at 4, time left 3
+        created: Job #9 priority(1), created at 15, time left 5
+Time Marker 16         waiting: 3
+        executing: Job #5 priority(4), created at 4, time left 2
+Time Marker 17         waiting: 3
+        executing: Job #5 priority(4), created at 4, time left 1
+        completed: Job #9 at time 
+Time Marker 18         waiting: 2
+        executing: Job #7 priority(1), created at 11, time left 4
+Time Marker 19         waiting: 2
+        executing: Job #7 priority(1), created at 11, time left 3
+        created: Job #10 priority(2), created at 19, time left 4
+Time Marker 20         waiting: 3
+        executing: Job #7 priority(1), created at 11, time left 2
+Time Marker 21         waiting: 3
+        executing: Job #7 priority(1), created at 11, time left 1
+        completed: Job #10 at time 
+Time Marker 22         waiting: 2
+        executing: Job #8 priority(3), created at 14, time left 4
+        created: Job #11 priority(3), created at 22, time left 5
+Time Marker 23         waiting: 3
+        executing: Job #8 priority(3), created at 14, time left 3
+Time Marker 24         waiting: 3
+        executing: Job #8 priority(3), created at 14, time left 2
+Time Marker 25         waiting: 3
+        executing: Job #8 priority(3), created at 14, time left 1
+        completed: Job #11 at time 
+        created: Job #12 priority(2), created at 25, time left 1
+Time Marker 26         waiting: 3
+        executing: Job #10 priority(2), created at 19, time left 4
+        created: Job #13 priority(3), created at 26, time left 2
+Time Marker 27         waiting: 4
+        executing: Job #10 priority(2), created at 19, time left 3
+Time Marker 28         waiting: 4
+        executing: Job #10 priority(2), created at 19, time left 2
+Time Marker 29         waiting: 4
+        executing: Job #10 priority(2), created at 19, time left 1
+        completed: Job #13 at time 
+        created: Job #14 priority(4), created at 29, time left 4
+Time Marker 30         waiting: 4
+        executing: Job #12 priority(2), created at 25, time left 1
+        completed: Job #14 at time 
+        created: Job #15 priority(1), created at 30, time left 4
+Time Marker 31         waiting: 4
+        executing: Job #13 priority(3), created at 26, time left 2
+        created: Job #16 priority(2), created at 31, time left 5
+Time Marker 32         waiting: 5
+        executing: Job #13 priority(3), created at 26, time left 1
+        completed: Job #16 at time 
+Time Marker 33         waiting: 4
+        executing: Job #14 priority(4), created at 29, time left 4
+        created: Job #17 priority(4), created at 33, time left 3
+Time Marker 34         waiting: 5
+        executing: Job #14 priority(4), created at 29, time left 3
+        created: Job #18 priority(4), created at 34, time left 4
+Time Marker 35         waiting: 6
+        executing: Job #14 priority(4), created at 29, time left 2
+        created: Job #19 priority(1), created at 35, time left 4
+Time Marker 36         waiting: 7
+        executing: Job #14 priority(4), created at 29, time left 1
+        completed: Job #19 at time 
+Time Marker 37         waiting: 6
+        executing: Job #17 priority(4), created at 33, time left 3
+        created: Job #20 priority(4), created at 37, time left 2
+Time Marker 38         waiting: 7
+        executing: Job #17 priority(4), created at 33, time left 2
+Time Marker 39         waiting: 7
+        executing: Job #17 priority(4), created at 33, time left 1
+        completed: Job #20 at time 
+        created: Job #21 priority(2), created at 39, time left 1
+Time Marker 40         waiting: 7
+        executing: Job #20 priority(4), created at 37, time left 2
+Time Marker 41         waiting: 7
+        executing: Job #20 priority(4), created at 37, time left 1
+        completed: Job #21 at time 
+Time Marker 42         waiting: 6
+        executing: Job #21 priority(2), created at 39, time left 1
+        completed: Job #21 at time 
+        created: Job #22 priority(3), created at 42, time left 4
+Time Marker 43         waiting: 6
+        executing: Job #19 priority(1), created at 35, time left 4
+        created: Job #23 priority(1), created at 43, time left 3
+Time Marker 44         waiting: 7
+        executing: Job #19 priority(1), created at 35, time left 3
+        created: Job #24 priority(4), created at 44, time left 2
+Time Marker 45         waiting: 8
+        executing: Job #19 priority(1), created at 35, time left 2
+        created: Job #25 priority(3), created at 45, time left 4
+Time Marker 46         waiting: 9
+        executing: Job #19 priority(1), created at 35, time left 1
+        completed: Job #25 at time 
+Time Marker 47         waiting: 8
+        executing: Job #24 priority(4), created at 44, time left 2
+Time Marker 48         waiting: 8
+        executing: Job #24 priority(4), created at 44, time left 1
+        completed: Job #25 at time 
+Time Marker 49         waiting: 7
+        executing: Job #23 priority(1), created at 43, time left 3
+        created: Job #26 priority(3), created at 49, time left 4
+Time Marker 50         waiting: 8
+        executing: Job #23 priority(1), created at 43, time left 2
+Time Marker 51         waiting: 8
+        executing: Job #23 priority(1), created at 43, time left 1
+        completed: Job #26 at time 
+        created: Job #27 priority(1), created at 51, time left 3
+Time Marker 52         waiting: 8
+        executing: Job #25 priority(3), created at 45, time left 4
+Time Marker 53         waiting: 8
+        executing: Job #25 priority(3), created at 45, time left 3
+        created: Job #28 priority(2), created at 53, time left 4
+Time Marker 54         waiting: 9
+        executing: Job #25 priority(3), created at 45, time left 2
+        created: Job #29 priority(4), created at 54, time left 4
+Time Marker 55         waiting: 10
+        executing: Job #25 priority(3), created at 45, time left 1
+        completed: Job #29 at time 
+Time Marker 56         waiting: 9
+        executing: Job #27 priority(1), created at 51, time left 3
+Time Marker 57         waiting: 9
+        executing: Job #27 priority(1), created at 51, time left 2
+Time Marker 58         waiting: 9
+        executing: Job #27 priority(1), created at 51, time left 1
+        completed: Job #29 at time 
+Time Marker 59         waiting: 8
+        executing: Job #29 priority(4), created at 54, time left 4
+Time Marker 60         waiting: 8
+        executing: Job #29 priority(4), created at 54, time left 3
+Time Marker 61         waiting: 8
+        executing: Job #29 priority(4), created at 54, time left 2
+Time Marker 62         waiting: 8
+        executing: Job #29 priority(4), created at 54, time left 1
+        completed: Job #29 at time 
+Time Marker 63         waiting: 7
+        executing: Job #28 priority(2), created at 53, time left 4
+        created: Job #30 priority(3), created at 63, time left 3
+Time Marker 64         waiting: 8
+        executing: Job #28 priority(2), created at 53, time left 3
+        created: Job #31 priority(1), created at 64, time left 3
+Time Marker 65         waiting: 9
+        executing: Job #28 priority(2), created at 53, time left 2
+        created: Job #32 priority(1), created at 65, time left 4
+Time Marker 66         waiting: 10
+        executing: Job #28 priority(2), created at 53, time left 1
+        completed: Job #32 at time 
+Time Marker 67         waiting: 9
+        executing: Job #30 priority(3), created at 63, time left 3
+        created: Job #33 priority(1), created at 67, time left 1
+Time Marker 68         waiting: 10
+        executing: Job #30 priority(3), created at 63, time left 2
+Time Marker 69         waiting: 10
+        executing: Job #30 priority(3), created at 63, time left 1
+        completed: Job #33 at time 
+Time Marker 70         waiting: 9
+        executing: Job #33 priority(1), created at 67, time left 1
+        completed: Job #33 at time 
+Time Marker 71         waiting: 8
+        executing: Job #31 priority(1), created at 64, time left 3
+Time Marker 72         waiting: 8
+        executing: Job #31 priority(1), created at 64, time left 2
+Time Marker 73         waiting: 8
+        executing: Job #31 priority(1), created at 64, time left 1
+        completed: Job #33 at time 
+        created: Job #34 priority(2), created at 73, time left 5
+Time Marker 74         waiting: 8
+        executing: Job #32 priority(1), created at 65, time left 4
+Time Marker 75         waiting: 8
+        executing: Job #32 priority(1), created at 65, time left 3
+Time Marker 76         waiting: 8
+        executing: Job #32 priority(1), created at 65, time left 2
+Time Marker 77         waiting: 8
+        executing: Job #32 priority(1), created at 65, time left 1
+        completed: Job #34 at time 
+Time Marker 78         waiting: 7
+        executing: Job #26 priority(3), created at 49, time left 4
+        created: Job #35 priority(2), created at 78, time left 4
+Time Marker 79         waiting: 8
+        executing: Job #26 priority(3), created at 49, time left 3
+Time Marker 80         waiting: 8
+        executing: Job #26 priority(3), created at 49, time left 2
+Time Marker 81         waiting: 8
+        executing: Job #26 priority(3), created at 49, time left 1
+        completed: Job #35 at time 
+Time Marker 82         waiting: 7
+        executing: Job #15 priority(1), created at 30, time left 4
+Time Marker 83         waiting: 7
+        executing: Job #15 priority(1), created at 30, time left 3
+Time Marker 84         waiting: 7
+        executing: Job #15 priority(1), created at 30, time left 2
+        created: Job #36 priority(1), created at 84, time left 5
+Time Marker 85         waiting: 8
+        executing: Job #15 priority(1), created at 30, time left 1
+        completed: Job #36 at time 
+Time Marker 86         waiting: 7
+        executing: Job #35 priority(2), created at 78, time left 4
+Time Marker 87         waiting: 7
+        executing: Job #35 priority(2), created at 78, time left 3
+Time Marker 88         waiting: 7
+        executing: Job #35 priority(2), created at 78, time left 2
+Time Marker 89         waiting: 7
+        executing: Job #35 priority(2), created at 78, time left 1
+        completed: Job #36 at time 
+        created: Job #37 priority(4), created at 89, time left 4
+Time Marker 90         waiting: 7
+        executing: Job #22 priority(3), created at 42, time left 4
+Time Marker 91         waiting: 7
+        executing: Job #22 priority(3), created at 42, time left 3
+        created: Job #38 priority(4), created at 91, time left 3
+Time Marker 92         waiting: 8
+        executing: Job #22 priority(3), created at 42, time left 2
+        created: Job #39 priority(3), created at 92, time left 5
+Time Marker 93         waiting: 9
+        executing: Job #22 priority(3), created at 42, time left 1
+        completed: Job #39 at time 
+Time Marker 94         waiting: 8
+        executing: Job #38 priority(4), created at 91, time left 3
+        created: Job #40 priority(1), created at 94, time left 1
+Time Marker 95         waiting: 9
+        executing: Job #38 priority(4), created at 91, time left 2
+Time Marker 96         waiting: 9
+        executing: Job #38 priority(4), created at 91, time left 1
+        completed: Job #40 at time 
+        created: Job #41 priority(4), created at 96, time left 5
+Time Marker 97         waiting: 9
+        executing: Job #40 priority(1), created at 94, time left 1
+        completed: Job #41 at time 
+Time Marker 98         waiting: 8
+        executing: Job #18 priority(4), created at 34, time left 4
+Time Marker 99         waiting: 8
+        executing: Job #18 priority(4), created at 34, time left 3
+        created: Job #42 priority(4), created at 99, time left 1
+
+********************** Final Report: ***************************
+    Active jobs: 
+Job #42 priority(4), created at 99, time left 1
+Job #37 priority(4), created at 89, time left 4
+Job #11 priority(3), created at 22, time left 5
+Job #36 priority(1), created at 84, time left 5
+Job #34 priority(2), created at 73, time left 5
+Job #9 priority(1), created at 15, time left 5
+Job #16 priority(2), created at 31, time left 5
+Job #41 priority(4), created at 96, time left 5
+Job #39 priority(3), created at 92, time left 5
+
+The number of jobs currently executing is 9
+The number of completed jobs is 33
+The total number of jobs is 42
+The average time left for unfinished jobs is 4.44
