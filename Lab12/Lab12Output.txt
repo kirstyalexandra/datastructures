@@ -1,0 +1,590 @@
+// Kirsty Alexandra Nguegang
+// COMP 150
+// Lab 12: Hashing
+
+                                                                                                displayHashTable Output
+
+*** Testing displayHashTable ***
+displaying empty dictionary
+The size of hash table is: 5
+0	null
+1	null
+2	null
+3	null
+4	null
+
+displaying dictionary after 2 entries have been added
+The size of hash table is: 5
+0	null
+1	KEY: 1 VALUE: 1
+2	KEY: 7 VALUE: 7
+3	null
+4	null
+
+displaying dictionary after 3 additional entries have been added
+The size of hash table is: 11
+0	null
+1	KEY: 1 VALUE: 1
+2	KEY: 13 VALUE: 13
+3	null
+4	null
+5	null
+6	KEY: 17 VALUE: 17
+7	KEY: 7 VALUE: 7
+8	KEY: 8 VALUE: 8
+9	null
+10	null
+
+displaying dictionary after 2 entries have been removed
+The size of hash table is: 11
+0	null
+1	notIn
+2	KEY: 13 VALUE: 13
+3	null
+4	null
+5	null
+6	notIn
+7	KEY: 7 VALUE: 7
+8	KEY: 8 VALUE: 8
+9	null
+10	null
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                                    getFirstRepeatedElement Output
+
+*** Find The First Element With Duplicate ***
+The size of hash table is: 11
+0	null
+1	KEY: 1 VALUE: 4
+2	KEY: 2 VALUE: -5
+3	KEY: 3 VALUE: -2
+4	null
+5	KEY: 5 VALUE: -3
+6	null
+7	null
+8	null
+9	KEY: 9 VALUE: 1
+10	null
+
+--> the first element that is repeated is: 3
+
+The size of hash table is: 11
+0	null
+1	KEY: 1 VALUE: 5
+2	KEY: 2 VALUE: -4
+3	KEY: 3 VALUE: -3
+4	null
+5	null
+6	KEY: 6 VALUE: -1
+7	null
+8	null
+9	null
+10	null
+
+--> the first element that is repeated is: 6
+
+The size of hash table is: 11
+0	null
+1	KEY: 1 VALUE: 2
+2	KEY: 2 VALUE: -1
+3	KEY: 3 VALUE: -5
+4	null
+5	null
+6	KEY: 6 VALUE: -3
+7	null
+8	null
+9	null
+10	null
+
+--> the first element that is repeated is: 2
+
+The size of hash table is: 11
+0	null
+1	KEY: 1 VALUE: 3
+2	KEY: 2 VALUE: -2
+3	KEY: 3 VALUE: -1
+4	null
+5	null
+6	KEY: 6 VALUE: -7
+7	null
+8	null
+9	null
+10	null
+
+--> the first element that is repeated is: 3
+
+The size of hash table is: 23
+0	null
+1	KEY: 1 VALUE: 6
+2	KEY: 2 VALUE: -7
+3	KEY: 3 VALUE: -2
+4	KEY: 4 VALUE: -3
+5	KEY: 5 VALUE: 9
+6	null
+7	null
+8	null
+9	KEY: 9 VALUE: 1
+10	null
+11	null
+12	null
+13	null
+14	null
+15	null
+16	null
+17	null
+18	null
+19	null
+20	null
+21	null
+22	null
+
+--> the first element that is repeated is: 3
+
+The size of hash table is: 5
+0	null
+1	null
+2	null
+3	KEY: 3 VALUE: -1
+4	null
+
+--> the first element that is repeated is: 3
+
+The size of hash table is: 23
+0	null
+1	KEY: 1 VALUE: 1
+2	KEY: 2 VALUE: 2
+3	KEY: 3 VALUE: 3
+4	KEY: 4 VALUE: 4
+5	KEY: 5 VALUE: 5
+6	KEY: 6 VALUE: 6
+7	KEY: 7 VALUE: 7
+8	KEY: 8 VALUE: 8
+9	null
+10	null
+11	null
+12	null
+13	null
+14	null
+15	null
+16	null
+17	null
+18	null
+19	null
+20	null
+21	null
+22	null
+
+--> duplicates not found
+
+The size of hash table is: 23
+0	null
+1	KEY: 1 VALUE: 2
+2	KEY: 2 VALUE: 3
+3	KEY: 3 VALUE: 4
+4	KEY: 4 VALUE: 5
+5	KEY: 5 VALUE: 6
+6	KEY: 6 VALUE: 7
+7	KEY: 7 VALUE: 8
+8	KEY: 8 VALUE: 1
+9	null
+10	null
+11	null
+12	null
+13	null
+14	null
+15	null
+16	null
+17	null
+18	null
+19	null
+20	null
+21	null
+22	null
+
+--> duplicates not found
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                                lookforPair Output
+
+
+	*** Check If There Exists A Pair Of Elements That Add Up To k ***
+k = 2
+toPutInHashTable: [6, 6, 3, 2, 1, 2, 2, 3]
+toCheck: [9, 3, 5, 1, 2, 2, 5, 3]
+The pair {1, 1} adds up to 2
+--> pair that add up to 2 found.
+toPutInHashTable: [2, 1, 6, 2, 3, 2, 3, 6]
+toCheck: [6, 6, 3, 2, 1, 2, 2, 3]
+The pair {1, 1} adds up to 2
+--> pair that add up to 2 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [2, 1, 6, 2, 3, 2, 3, 6]
+The pair {1, 1} adds up to 2
+--> pair that add up to 2 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {1, 1} adds up to 2
+--> pair that add up to 2 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+--> pair that add up to 2 NOT found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+--> pair that add up to 2 NOT found.
+toPutInHashTable: [8, 1, 2, 3, 4, 5, 6, 7]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 1} adds up to 2
+--> pair that add up to 2 found.
+
+k = 3
+toPutInHashTable: [6, 6, 3, 2, 1, 2, 2, 3]
+toCheck: [9, 3, 5, 1, 2, 2, 5, 3]
+The pair {1, 2} adds up to 3
+--> pair that add up to 3 found.
+toPutInHashTable: [2, 1, 6, 2, 3, 2, 3, 6]
+toCheck: [6, 6, 3, 2, 1, 2, 2, 3]
+The pair {2, 1} adds up to 3
+--> pair that add up to 3 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [2, 1, 6, 2, 3, 2, 3, 6]
+The pair {2, 1} adds up to 3
+--> pair that add up to 3 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {1, 2} adds up to 3
+--> pair that add up to 3 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+--> pair that add up to 3 NOT found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+--> pair that add up to 3 NOT found.
+toPutInHashTable: [8, 1, 2, 3, 4, 5, 6, 7]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 2} adds up to 3
+--> pair that add up to 3 found.
+
+k = 4
+toPutInHashTable: [6, 6, 3, 2, 1, 2, 2, 3]
+toCheck: [9, 3, 5, 1, 2, 2, 5, 3]
+The pair {3, 1} adds up to 4
+--> pair that add up to 4 found.
+toPutInHashTable: [2, 1, 6, 2, 3, 2, 3, 6]
+toCheck: [6, 6, 3, 2, 1, 2, 2, 3]
+The pair {3, 1} adds up to 4
+--> pair that add up to 4 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [2, 1, 6, 2, 3, 2, 3, 6]
+The pair {2, 2} adds up to 4
+--> pair that add up to 4 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {3, 1} adds up to 4
+--> pair that add up to 4 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {1, 3} adds up to 4
+--> pair that add up to 4 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 3} adds up to 4
+--> pair that add up to 4 found.
+toPutInHashTable: [8, 1, 2, 3, 4, 5, 6, 7]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 3} adds up to 4
+--> pair that add up to 4 found.
+
+k = 5
+toPutInHashTable: [6, 6, 3, 2, 1, 2, 2, 3]
+toCheck: [9, 3, 5, 1, 2, 2, 5, 3]
+The pair {3, 2} adds up to 5
+--> pair that add up to 5 found.
+toPutInHashTable: [2, 1, 6, 2, 3, 2, 3, 6]
+toCheck: [6, 6, 3, 2, 1, 2, 2, 3]
+The pair {3, 2} adds up to 5
+--> pair that add up to 5 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [2, 1, 6, 2, 3, 2, 3, 6]
+The pair {2, 3} adds up to 5
+--> pair that add up to 5 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {3, 2} adds up to 5
+--> pair that add up to 5 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {2, 3} adds up to 5
+--> pair that add up to 5 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {2, 3} adds up to 5
+--> pair that add up to 5 found.
+toPutInHashTable: [8, 1, 2, 3, 4, 5, 6, 7]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 4} adds up to 5
+--> pair that add up to 5 found.
+
+k = 6
+toPutInHashTable: [6, 6, 3, 2, 1, 2, 2, 3]
+toCheck: [9, 3, 5, 1, 2, 2, 5, 3]
+The pair {3, 3} adds up to 6
+--> pair that add up to 6 found.
+toPutInHashTable: [2, 1, 6, 2, 3, 2, 3, 6]
+toCheck: [6, 6, 3, 2, 1, 2, 2, 3]
+The pair {3, 3} adds up to 6
+--> pair that add up to 6 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [2, 1, 6, 2, 3, 2, 3, 6]
+The pair {3, 3} adds up to 6
+--> pair that add up to 6 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {3, 3} adds up to 6
+--> pair that add up to 6 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {3, 3} adds up to 6
+--> pair that add up to 6 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {3, 3} adds up to 6
+--> pair that add up to 6 found.
+toPutInHashTable: [8, 1, 2, 3, 4, 5, 6, 7]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 5} adds up to 6
+--> pair that add up to 6 found.
+
+k = 7
+toPutInHashTable: [6, 6, 3, 2, 1, 2, 2, 3]
+toCheck: [9, 3, 5, 1, 2, 2, 5, 3]
+The pair {5, 2} adds up to 7
+--> pair that add up to 7 found.
+toPutInHashTable: [2, 1, 6, 2, 3, 2, 3, 6]
+toCheck: [6, 6, 3, 2, 1, 2, 2, 3]
+The pair {6, 1} adds up to 7
+--> pair that add up to 7 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [2, 1, 6, 2, 3, 2, 3, 6]
+The pair {1, 6} adds up to 7
+--> pair that add up to 7 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {4, 3} adds up to 7
+--> pair that add up to 7 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {4, 3} adds up to 7
+--> pair that add up to 7 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {4, 3} adds up to 7
+--> pair that add up to 7 found.
+toPutInHashTable: [8, 1, 2, 3, 4, 5, 6, 7]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 6} adds up to 7
+--> pair that add up to 7 found.
+
+k = 8
+toPutInHashTable: [6, 6, 3, 2, 1, 2, 2, 3]
+toCheck: [9, 3, 5, 1, 2, 2, 5, 3]
+The pair {5, 3} adds up to 8
+--> pair that add up to 8 found.
+toPutInHashTable: [2, 1, 6, 2, 3, 2, 3, 6]
+toCheck: [6, 6, 3, 2, 1, 2, 2, 3]
+The pair {6, 2} adds up to 8
+--> pair that add up to 8 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [2, 1, 6, 2, 3, 2, 3, 6]
+The pair {2, 6} adds up to 8
+--> pair that add up to 8 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {2, 6} adds up to 8
+--> pair that add up to 8 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {5, 3} adds up to 8
+--> pair that add up to 8 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {5, 3} adds up to 8
+--> pair that add up to 8 found.
+toPutInHashTable: [8, 1, 2, 3, 4, 5, 6, 7]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 7} adds up to 8
+--> pair that add up to 8 found.
+
+k = 9
+toPutInHashTable: [6, 6, 3, 2, 1, 2, 2, 3]
+toCheck: [9, 3, 5, 1, 2, 2, 5, 3]
+The pair {3, 6} adds up to 9
+--> pair that add up to 9 found.
+toPutInHashTable: [2, 1, 6, 2, 3, 2, 3, 6]
+toCheck: [6, 6, 3, 2, 1, 2, 2, 3]
+The pair {6, 3} adds up to 9
+--> pair that add up to 9 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [2, 1, 6, 2, 3, 2, 3, 6]
+The pair {6, 3} adds up to 9
+--> pair that add up to 9 found.
+toPutInHashTable: [3, 2, 1, 2, 2, 3, 6, 6]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+The pair {3, 6} adds up to 9
+--> pair that add up to 9 found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [9, 3, 4, 4, 4, 1, 2, 2, 5, 3]
+--> pair that add up to 9 NOT found.
+toPutInHashTable: [3, 3, 3, 3, 3, 3, 3]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {6, 3} adds up to 9
+--> pair that add up to 9 found.
+toPutInHashTable: [8, 1, 2, 3, 4, 5, 6, 7]
+toCheck: [1, 2, 3, 4, 5, 6, 7, 8]
+The pair {1, 8} adds up to 9
+--> pair that add up to 9 found.
+
+Bye!
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                    CheckInventory with Linear Probing
+
+How many CarIDs to generate?
+5
+
+*** Checking if "sortedFile.txt" and "randomFile.txt" have the same elements ***
+The content of the hash table after randomFile.txt was processed:
+The size of hash table is: 11
+0	null
+1	null
+2	KEY: CarID{GOM 90751881774763} VALUE: 1
+3	null
+4	KEY: CarID{EFP 3459317612193} VALUE: 1
+5	KEY: CarID{PPS 25139026998673} VALUE: 1
+6	KEY: CarID{EIH 9198371612033} VALUE: 1
+7	null
+8	null
+9	null
+10	KEY: CarID{YGS 56616982772350} VALUE: 1
+
+The content of the hash table after sortedFile.txt was processed:
+The size of hash table is: 11
+0	null
+1	null
+2	notIn
+3	null
+4	notIn
+5	notIn
+6	notIn
+7	null
+8	null
+9	null
+10	notIn
+
+--> the elements in files "randomFile.txt" and "sortedFile.txt are the same
+
+*** Checking if "sortedFile.txt" and "corruptedFile.txt" have the same elements ***
+The content of the hash table after sortedFile.txt was processed:
+The size of hash table is: 11
+0	null
+1	null
+2	KEY: CarID{GOM 90751881774763} VALUE: 1
+3	null
+4	KEY: CarID{EIH 9198371612033} VALUE: 1
+5	KEY: CarID{PPS 25139026998673} VALUE: 1
+6	KEY: CarID{EFP 3459317612193} VALUE: 1
+7	null
+8	null
+9	null
+10	KEY: CarID{YGS 56616982772350} VALUE: 1
+
+The content of the hash table after corruptedFile.txt was processed:
+The size of hash table is: 11
+0	null
+1	null
+2	KEY: CarID{GOM 90751881774763} VALUE: 1
+3	null
+4	KEY: CarID{EIH 9198371612033} VALUE: 1
+5	KEY: CarID{PPS 25139026998673} VALUE: 1
+6	notIn
+7	null
+8	null
+9	null
+10	KEY: CarID{YGS 56616982772350} VALUE: 1
+
+--> the elements in files "corruptedFile.txt" and "sortedFile.txt are NOT the same
+
+Bye!
+
+                                                                                               CheckInventory with Double Hashing
+
+How many CarIDs to generate?
+5
+
+*** Checking if "sortedFile.txt" and "randomFile.txt" have the same elements ***
+The content of the hash table after randomFile.txt was processed:
+The size of hash table is: 11
+0	KEY: CarID{GOM 4398089831050} VALUE: 1
+1	null
+2	KEY: CarID{YGS 87893138198731} VALUE: 1
+3	KEY: CarID{EFP 64131146722905} VALUE: 1
+4	null
+5	KEY: CarID{PPS 36271465644744} VALUE: 1
+6	null
+7	null
+8	null
+9	null
+10	KEY: CarID{EIH 44466195655654} VALUE: 1
+
+The content of the hash table after sortedFile.txt was processed:
+The size of hash table is: 11
+0	notIn
+1	null
+2	notIn
+3	notIn
+4	null
+5	notIn
+6	null
+7	null
+8	null
+9	null
+10	notIn
+
+--> the elements in files "randomFile.txt" and "sortedFile.txt are the same
+
+*** Checking if "sortedFile.txt" and "corruptedFile.txt" have the same elements ***
+The content of the hash table after sortedFile.txt was processed:
+The size of hash table is: 11
+0	KEY: CarID{GOM 4398089831050} VALUE: 1
+1	null
+2	KEY: CarID{YGS 87893138198731} VALUE: 1
+3	KEY: CarID{EFP 64131146722905} VALUE: 1
+4	null
+5	KEY: CarID{PPS 36271465644744} VALUE: 1
+6	null
+7	null
+8	null
+9	null
+10	KEY: CarID{EIH 44466195655654} VALUE: 1
+
+The content of the hash table after corruptedFile.txt was processed:
+The size of hash table is: 11
+0	notIn
+1	null
+2	KEY: CarID{YGS 87893138198731} VALUE: 1
+3	KEY: CarID{EFP 64131146722905} VALUE: 1
+4	null
+5	KEY: CarID{PPS 36271465644744} VALUE: 1
+6	null
+7	null
+8	null
+9	null
+10	KEY: CarID{EIH 44466195655654} VALUE: 1
+
+--> the elements in files "corruptedFile.txt" and "sortedFile.txt are NOT the same
+
+Bye!
+
+
