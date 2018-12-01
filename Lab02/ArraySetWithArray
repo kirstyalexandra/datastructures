@@ -1,0 +1,311 @@
+package Lab02;
+import java.util.Arrays;
+
+/**
+ * A class that implements the ADT set by using a resizable array.
+ * The array is never full.
+ *
+ * @author Kirsty Alexandra Nguegang
+ * @version 1/30/2018
+ */
+public class ArraySetWithArray<T extends Comparable<? super T>> implements SetInterface<T>
+{
+    private T[] arrayOfSetEntries;
+    private int numberOfEntries;
+    private static final int DEFAULT_CAPACITY = 3; // Initial capacity of array
+
+    /**
+     * Creates an empty array whose initial capacity is 3.
+     */
+    public ArraySetWithArray()
+    {
+        //TODO Project2
+        this(DEFAULT_CAPACITY);
+    } // end default constructor
+
+    /**
+     * Creates an empty array having a given initial capacity.
+     *
+     * @param capacity The integer capacity desired.
+     */
+    public ArraySetWithArray(int capacity)
+    {
+        //TODO Project2
+        this.arrayOfSetEntries = (T[]) new Comparable<?>[capacity];
+        this.numberOfEntries = 0;
+    } // end constructor
+
+    /**
+     * Creates an array containing given entries.
+     *
+     * @param contents An array of objects.
+     */
+    public ArraySetWithArray(T[] contents)
+    {
+        //TODO Project2
+        this.arrayOfSetEntries = (T[]) new Comparable<?>[contents.length];
+        for (T elements: contents)
+        {
+            add(elements);
+        }
+        this.arrayOfSetEntries = Arrays.copyOf(contents, contents.length);
+    } // end constructor
+
+    /**
+     * Adds a new entry to this array, avoiding duplicates.
+     *
+     * @param newEntry The object to be added as a new entry.
+     * @return True if the addition is successful, or false if not.
+     */
+    public boolean add(T newEntry)
+    {
+        //TODO Project2
+        boolean addResult = true;
+        if (!this.contains(newEntry))
+        {
+            if (this.numberOfEntries >= this.arrayOfSetEntries.length)
+            {
+                ensureCapacity();
+            }
+            this.arrayOfSetEntries[this.numberOfEntries] = newEntry;
+            this.numberOfEntries++;
+            addResult = true;
+        }
+        else
+        {
+            addResult = false;
+        }
+        return addResult;
+        //return false; //THIS IS A STUB
+    } // end add
+
+    // Doubles the size of the array if it is full.
+    private void ensureCapacity()
+    {
+        //TODO Project2
+        int newLength = 2 * this.arrayOfSetEntries.length;
+        System.out.println("--> Resizing this.arrayOfSetEntries from " + this.numberOfEntries + " to " + newLength);
+        this.arrayOfSetEntries = Arrays.copyOf(this.arrayOfSetEntries, newLength);
+    } // end ensureCapacity
+
+    /**
+     * Retrieves all entries that are in this array.
+     *
+     * @return A newly allocated array of all the entries.
+     */
+    public T[] toArray()
+    {
+        //TODO Project2
+        // The cast is safe because the new array contains null entries.
+        @SuppressWarnings("unchecked")
+        T[] result = (T[]) new Comparable<?>[this.numberOfEntries]; // Unchecked cast
+        for (int index = 0; index < this.numberOfEntries; index++)
+        {
+            result[index] = this.arrayOfSetEntries[index];
+        }
+        return result;
+    } // end toArray
+
+    /**
+     * Sees whether this array is empty.
+     *
+     * @return True if this array is empty, or false if not.
+     */
+    public boolean isEmpty()
+    {
+        //TODO Project2
+        return this.numberOfEntries == 0;
+    } // end isEmpty
+
+    /**
+     * Gets the number of entries currently in this array.
+     *
+     * @return The integer number of entries currently in the array.
+     */
+    public int getCurrentSize()
+    {
+        //TODO Project2
+        return this.numberOfEntries; //THIS IS A STUB
+    } // end getCurrentSize
+
+    /**
+     * Tests whether this array contains a given entry.
+     *
+     * @param anEntry The entry to locate.
+     * @return True if the array contains anEntry, or false if not.
+     */
+    public boolean contains(T anEntry)
+    {
+        //TODO Project2
+        boolean entryContain = false;
+        for (int i = 0; i < numberOfEntries; i++)
+        {
+            if (this.arrayOfSetEntries[i].equals(anEntry))
+            {
+                entryContain = true;
+            }
+        }
+        return entryContain; //THIS IS A STUB
+    } // end contains
+
+    /**
+     * Removes all entries from this array.
+     */
+    public void clear()
+    {
+        //TODO Project2
+        while (!isEmpty())
+        {
+            this.remove();
+        }
+    } // end clear
+
+    /**
+     * Removes one unspecified entry from this bag.
+     *
+     * @return Either the removed entry if the removal
+     * was successful, or null if not.
+     */
+    public T remove()
+    {
+        //TODO Project2
+        //THIS IS A STUB
+        T result = removeEntry(this.numberOfEntries - 1);
+        return result;
+    } // end remove
+
+    /**
+     * Removes one occurrence of a given entry from this array.
+     *
+     * @param anEntry The entry to be removed.
+     * @return True if the removal was successful, or null if not.
+     */
+    public boolean removeElement(T anEntry)
+    {
+        //TODO Project2
+        int where = -1;
+        boolean stillLooking = true;
+
+        for (int index = 0; stillLooking && (index < this.numberOfEntries); index++)
+        {
+            if (anEntry.equals(this.arrayOfSetEntries[index]))
+            {
+                stillLooking = false;
+                where = index;
+            }
+        }
+        int index = where;
+        T result = removeEntry(index);
+        return anEntry.equals(result);
+    } // end removeElement
+
+    // Removes and returns the array entry at a given index.
+    // If no such entry exists, returns null.
+    private T removeEntry(int givenIndex)
+    {
+        //TODO Project2
+        T removedEntry = null;
+        if (!isEmpty() && (givenIndex >= 0))
+        {
+            removedEntry = this.arrayOfSetEntries[givenIndex];          // Entry to remove
+            this.numberOfEntries--;
+            this.arrayOfSetEntries[givenIndex] = this.arrayOfSetEntries[this.numberOfEntries];  // Replace entry to remove with last entry
+            this.arrayOfSetEntries[this.numberOfEntries] = null;             // Remove reference to last entry
+        }
+        return removedEntry;//THIS IS A STUB
+    } // end removeEntry
+
+    // Displays a set.
+    public void displaySet()
+    {
+        //TODO Project2
+        if (this.numberOfEntries > 0)
+        {
+            System.out.print("The set contains " + this.numberOfEntries + " string(s): ");
+            for (int index = 0; index < this.numberOfEntries; index++)
+            {
+                System.out.print(this.arrayOfSetEntries[index] + " ");
+            }
+            System.out.println();
+        }
+        else
+            System.out.println("The set is empty");
+
+    } // end displaySet
+
+    public static void main(String[] args)
+    {
+        String[] inputData = {"A", "B", "C", "D", "A", "C", "B", "B"};
+
+        System.out.println("Creating aSet with the secondary constructor - capacity of " + inputData.length);
+        SetInterface<String> aSet = new ArraySetWithArray<>(inputData.length);
+        System.out.println("Adding elements from inputData to aSet");
+        for (int i = 0; i < inputData.length; i++)
+            aSet.add(inputData[i]);
+        aSet.displaySet();
+        System.out.println("\nClearing aSet");
+        aSet.clear();
+        aSet.displaySet();
+        System.out.println("aSet isEmpty returns " + aSet.isEmpty());
+        System.out.println("The size of aSet is " + aSet.getCurrentSize());
+
+        System.out.println("\nCreating set1 with default constructor");
+        SetInterface<String> set1 = new ArraySetWithArray<>();
+
+        // Initial capacity is 3
+        System.out.println("\nset1 initially empty, capacity of 3: ");
+        set1.displaySet();
+
+        System.out.println("\nAdding elements to set1");
+        set1.add("A");
+        set1.add("A");
+        set1.add("B");
+        set1.add("A");
+        set1.add("C");
+        set1.add("A");
+
+        System.out.println("\nset1 after adding elements: ");
+        set1.displaySet();
+
+        System.out.println("\nset1 after adding more elements which should trigger resizing: ");
+        set1.add("V");
+        set1.add("V");
+        set1.add("T");
+        set1.add("U");
+        set1.add("V");
+        set1.add("W");
+        set1.add("X");
+        set1.add("Y");
+        set1.add("Z");
+        set1.displaySet();
+
+        System.out.println("\nCreating set2 with the secondary constructor that takes an array as input");
+        SetInterface<String> set2 = new ArraySetWithArray<>(inputData);
+        System.out.println("Adding more elements to set2");
+        set2.add("A");
+        set2.add("B");
+        set2.add("B");
+        set2.add("A");
+        set2.add("C");
+        set2.add("C");
+        set2.add("D");
+        set2.add("E");
+        set2.add("F");
+        set2.add("G");
+        set2.add("H");
+
+        System.out.println("set2 after adding and resizing: ");
+        set2.displaySet();
+
+        System.out.println("\nset1 contains A: " + set1.contains("A"));
+        System.out.println("set1 contains E: " + set1.contains("E"));
+
+        set1.removeElement("B");
+        System.out.println("After removing B from set1:");
+        set1.displaySet();
+
+        System.out.println("After removing " + set1.remove()
+                + " from set1:");
+        set1.displaySet();
+    }
+} // end ArraySetWithArray
