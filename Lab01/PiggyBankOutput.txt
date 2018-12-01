@@ -1,0 +1,162 @@
+//Kirsty Alexandra Nguegang
+//COMP 151
+
+How many coins/bills can fit in your piggy bank?
+10
+How many coins/bills should the computer put in your piggy bank?
+6
+How many rounds should we play?
+4
+
+******* Round #1 --> USER'S TURN *******
+>> Adding 6 monies to your piggy bank <<
+Added $20.00 to the piggy bank
+Added $20.00 to the piggy bank
+Added $0.25 to the piggy bank
+Added $0.50 to the piggy bank
+Added $0.10 to the piggy bank
+Added $2.00 to the piggy bank
+
+>> The content of your piggy bank <<
+The piggy bank can hold 10 coins/bills; 
+There are 6 coins/bills in the piggy bank: [JACKSON landed TAILS, JACKSON landed TAILS, QUARTER landed TAILS, HALF_DOLLAR landed TAILS, DIME landed TAILS, JEFFERSON landed TAILS]
+The total of $42.85
+
+--> Adding additional monies:
+Added $0.05 to the piggy bank
+Added $2.00 to the piggy bank
+
+>> Shaking your piggy bank <<
+The piggy bank can hold 10 coins/bills; 
+There are 8 coins/bills in the piggy bank: [JACKSON landed TAILS, HALF_DOLLAR landed TAILS, JEFFERSON landed TAILS, JEFFERSON landed TAILS, QUARTER landed TAILS, NICKEL landed TAILS, JACKSON landed TAILS, DIME landed TAILS]
+The total of $44.90
+
+>> Emptying your piggy bank <<
+DIME landed TAILS
+JACKSON landed TAILS
+NICKEL landed HEADS
+QUARTER landed TAILS
+JEFFERSON landed HEADS
+JEFFERSON landed TAILS
+HALF_DOLLAR landed TAILS
+JACKSON landed TAILS
+
+2 out of 8 coins/bills landed on HEADS
+The total value of HEADS is: $2.05
+
+******* Round #2 --> COMPUTER'S TURN *******
+>> Adding 6 monies to your piggy bank <<
+Added $10.00 to the piggy bank
+Added $0.25 to the piggy bank
+Added $1.00 to the piggy bank
+Added $0.10 to the piggy bank
+Added $0.10 to the piggy bank
+Added $0.10 to the piggy bank
+
+>> The content of your piggy bank <<
+The piggy bank can hold 10 coins/bills; 
+There are 6 coins/bills in the piggy bank: [HAMILTON landed TAILS, QUARTER landed TAILS, WASHINGTON landed TAILS, DIME landed TAILS, DIME landed TAILS, DIME landed TAILS]
+The total of $11.55
+
+--> Adding additional monies:
+Added $0.01 to the piggy bank
+Added $1.00 to the piggy bank
+
+>> Shaking your piggy bank <<
+The piggy bank can hold 10 coins/bills; 
+There are 8 coins/bills in the piggy bank: [WASHINGTON landed TAILS, DIME landed TAILS, QUARTER landed TAILS, DIME landed TAILS, HAMILTON landed TAILS, DIME landed TAILS, PENNY landed TAILS, WASHINGTON landed TAILS]
+The total of $12.56
+
+>> Emptying your piggy bank <<
+WASHINGTON landed TAILS
+PENNY landed TAILS
+DIME landed TAILS
+HAMILTON landed HEADS
+DIME landed HEADS
+QUARTER landed TAILS
+DIME landed TAILS
+WASHINGTON landed HEADS
+
+3 out of 8 coins/bills landed on HEADS
+The total value of HEADS is: $11.10
+
+******* Round #3 --> USER'S TURN *******
+>> Adding 6 monies to your piggy bank <<
+Added $100.00 to the piggy bank
+Added $0.50 to the piggy bank
+Added $0.10 to the piggy bank
+Added $0.50 to the piggy bank
+Added $0.01 to the piggy bank
+Added $50.00 to the piggy bank
+
+>> The content of your piggy bank <<
+The piggy bank can hold 10 coins/bills; 
+There are 6 coins/bills in the piggy bank: [FRANKLIN landed TAILS, HALF_DOLLAR landed TAILS, DIME landed TAILS, HALF_DOLLAR landed TAILS, PENNY landed TAILS, GRANT landed TAILS]
+The total of $151.11
+
+--> Adding additional monies:
+Added $0.01 to the piggy bank
+Added $50.00 to the piggy bank
+
+>> Shaking your piggy bank <<
+The piggy bank can hold 10 coins/bills; 
+There are 8 coins/bills in the piggy bank: [PENNY landed TAILS, HALF_DOLLAR landed TAILS, HALF_DOLLAR landed TAILS, GRANT landed TAILS, DIME landed TAILS, PENNY landed TAILS, GRANT landed TAILS, FRANKLIN landed TAILS]
+The total of $201.12
+
+>> Emptying your piggy bank <<
+FRANKLIN landed TAILS
+GRANT landed HEADS
+PENNY landed TAILS
+DIME landed HEADS
+GRANT landed HEADS
+HALF_DOLLAR landed HEADS
+HALF_DOLLAR landed HEADS
+PENNY landed HEADS
+
+6 out of 8 coins/bills landed on HEADS
+The total value of HEADS is: $101.11
+
+******* Round #4 --> COMPUTER'S TURN *******
+>> Adding 6 monies to your piggy bank <<
+Added $0.01 to the piggy bank
+Added $10.00 to the piggy bank
+Added $0.25 to the piggy bank
+Added $5.00 to the piggy bank
+Added $0.01 to the piggy bank
+Added $0.01 to the piggy bank
+
+>> The content of your piggy bank <<
+The piggy bank can hold 10 coins/bills; 
+There are 6 coins/bills in the piggy bank: [PENNY landed TAILS, HAMILTON landed TAILS, QUARTER landed TAILS, LINCOLN landed TAILS, PENNY landed TAILS, PENNY landed TAILS]
+The total of $15.28
+
+--> Adding additional monies:
+Added $0.10 to the piggy bank
+Added $2.00 to the piggy bank
+
+>> Shaking your piggy bank <<
+The piggy bank can hold 10 coins/bills; 
+There are 8 coins/bills in the piggy bank: [LINCOLN landed TAILS, PENNY landed TAILS, HAMILTON landed TAILS, QUARTER landed TAILS, JEFFERSON landed TAILS, DIME landed TAILS, PENNY landed TAILS, PENNY landed TAILS]
+The total of $17.38
+
+>> Emptying your piggy bank <<
+PENNY landed HEADS
+PENNY landed HEADS
+DIME landed HEADS
+JEFFERSON landed HEADS
+QUARTER landed HEADS
+HAMILTON landed TAILS
+PENNY landed TAILS
+LINCOLN landed TAILS
+
+5 out of 8 coins/bills landed on HEADS
+The total value of HEADS is: $2.37
+
+***GAME OVER***
+
+computerHeadsCount = 8
+userHeadsCount = 8
+
+It's a tie!!!
+
+Process finished with exit code 0
